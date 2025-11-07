@@ -1,5 +1,5 @@
-import Logo from "../Logo";
-import Navbar from "./Navbar";
+import Logo from "../Logo"
+import Navbar from "../Navbar"
 
 const Header = () => {
   return (
@@ -11,4 +11,3 @@ const Header = () => {
 };
 
 export default Header;
-
