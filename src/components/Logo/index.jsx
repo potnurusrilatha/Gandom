@@ -5,7 +5,7 @@ const Logo = () => {
     <a href="/">
       <img
         src={logo}
-        alt="LogoGandom"
+        alt="Logocolor"
         className="h-[80px] w-auto object-contain"
       />
     </a>
