@@ -1,6 +1,10 @@
 import React from "react";
+<<<<<<< HEAD
 import coverImg from "../assets/Images/1.Home Page/_Cover.png";
 import logo from "../assets/Logo Gandom/Logo white.png";
+=======
+import coverImg from "../.././src/assets/Images/1.Home Page/_Cover.png";
+>>>>>>> 9289cf5 (fixed Hero Component)
 
 const Hero = () => {
     return (

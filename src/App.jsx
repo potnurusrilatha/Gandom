@@ -37,7 +37,7 @@ function App() {
       <Hero />
 
       {/* Main content */}
-      <main className="flex-grow w-full max-w-[1440px] px-8 mx-auto">
+
       <main className="flex-grow w-full max-w-[1440px] mx-auto">
         <Routes>
 
@@ -49,7 +49,7 @@ function App() {
               <>
                 <HealthySection />
                 <AboutUs />
-             
+
                 <HomeEvents />
                 <GymHealthy />
 
@@ -64,7 +64,7 @@ function App() {
           <Route path="/dishes/desserts" element={<DessertsPage />} />
           <Route path="/dishes/waffles" element={<WafflesPage />} />
           <Route path="/dishes/sidedishes" element={<SidedishesPage />} />
-          
+
           {/* Delivery pages */}
           <Route path="/delivery/order" element={<DeliveryOrderPage />} />
           <Route path="/delivery/createboxmenu" element={<CreateBoxMenuPage />} />
