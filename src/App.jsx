@@ -1,11 +1,14 @@
-import Header from "./components/Header"
+import React from "react";
+//import Header from "./components/Header";
+import Hero from "./components/Hero";
 
 function App() {
   return (
-    <div className="flex h-screen justify-center text-white text-3xl font-bold">
-  <Header />
+    <div className="text-white text-3xl font-bold">
+      {/* <Header /> */}
+      <Hero />
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
