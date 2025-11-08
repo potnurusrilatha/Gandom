@@ -1,12 +1,27 @@
 import React from "react";
-//import Header from "./components/Header";
 import Hero from "./components/Hero";
+import Card from "./components/Card";
 
 function App() {
+  const testimonials = [
+    {
+      text: "Maten är fantastisk och det kommer att bli min nya favoriträtt",
+      author: "Gandoms customer",
+    },
+    {
+      text: "The food arrived hot. Yogurt dishes are often good, and I thought it was pretty good with noodles. Also, being vegetarian is really important to me. Thanks.",
+      author: "Gandoms customer",
+    },
+  ];
+
   return (
-    <div className="text-white text-3xl font-bold">
-      {/* <Header /> */}
+    <div>
       <Hero />
+      <section className="bg-grayLight py-16 flex justify-center gap-8 flex-wrap">
+        {testimonials.map((t, i) => (
+          <Card key={i} text={t.text} author={t.author} />
+        ))}
+      </section>
     </div>
   );
 }
