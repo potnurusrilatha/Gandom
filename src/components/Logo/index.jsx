@@ -1,4 +1,3 @@
-
 import logo from "../../assets/Logo Gandom/Logo color.png"
 
 const Logo = () => {
