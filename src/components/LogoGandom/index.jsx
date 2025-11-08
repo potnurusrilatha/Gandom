@@ -1,5 +1,5 @@
 
-import logo from "../../assets/Logo Gandom/Logo color.png"
+import logo from "../../assets/LogoGandom/Logocolor.png"
 
 const LogoGandom = () => {
   return (
