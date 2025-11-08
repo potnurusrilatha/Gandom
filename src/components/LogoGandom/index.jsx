@@ -1,7 +1,7 @@
 
 import logo from "../../assets/Logo Gandom/Logo color.png"
 
-const Logo = () => {
+const LogoGandom = () => {
   return (
     <div className="flex items-center">
       <a href="/">
@@ -15,4 +15,4 @@ const Logo = () => {
   );
 };
 
-export default Logo;
+export default LogoGandom;
