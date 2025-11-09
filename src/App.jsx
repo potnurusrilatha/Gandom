@@ -7,6 +7,8 @@ import SoupsPage from "./pages/Dishes/SoupsPage/page.jsx";
 import DessertsPage from "./pages/Dishes/DessertsPage/page.jsx";
 import WaffelsPage from "./pages/Dishes/WaffelsPage/page.jsx";
 import GymPage from "./pages/Dishes/GymPage/page.jsx";
+import Hero from "./components/Hero";
+import Card from "./components/Card";
 
 function App() {
   const testimonials = [
@@ -24,6 +26,7 @@ function App() {
     <div className="flex flex-col min-h-screen w-full bg-[theme(colors.grayLight)]">
       {/* Header */}
       <Header />
+      <Hero />
 
       {/* Main content */}
       <main className="flex-grow w-full max-w-[1440px] px-8 mx-auto">
@@ -44,7 +47,11 @@ function App() {
           <Route path="/dishes/gymPage" element={<GymPage />} />
         </Routes>
       </main>
-
+      <section className="bg-grayLight py-16 flex justify-center gap-8 flex-wrap">
+        {testimonials.map((t, i) => (
+          <Card key={i} text={t.text} author={t.author} />
+        ))}
+      </section>
       {/* Footer */}
       <Footer />
     </div>
