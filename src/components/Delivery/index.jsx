@@ -1,5 +1,5 @@
 import { useNavigate } from 'react-router-dom';
-import foodImage1 from "../../assets/Images/1.Home Page/pakaging.png"; 
+import foodImage1 from "../../assets/Images/1.Home Page/Pakaging.png"
 import foodImage2 from "../../assets/Images/1.Home Page/Menu.png"; 
 import foodImage3 from "../../assets/Images/1.Home Page/Foodora Logo.png"; 
 import foodImage4 from "../../assets/Images/1.Home Page/Ashe Reshteh X2.png"; 
