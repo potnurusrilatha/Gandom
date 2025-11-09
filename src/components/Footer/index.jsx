@@ -15,7 +15,7 @@ const Footer = () => {
       style={{ backgroundImage: `url(${background})` }}
     >
       <div className="max-w-[1440px] mx-auto px-4 md:px-8 lg:px-20">
-        <div className="flex flex-col md:flex-row md:flex-nowrap items-start md:items-start gap-y-6 md:gap-x-12 lg:gap-x-20">
+        <div className="flex flex-col md:flex-row items-start md:items-start justify-between gap-y-6 md:gap-x-0">
           {/* Logo */}
           <div className="flex-shrink-0">
             <img
@@ -26,22 +26,22 @@ const Footer = () => {
           </div>
 
           {/* Pages */}
-          <div className="flex-shrink min-w-[80px]">
-            <h3 className="font-inter font-bold text-[16px] sm:text-[18px] md:text-[20px] lg:text-[24px] text-grayLight whitespace-nowrap">
+          <div>
+            <h3 className="font-inter font-bold text-[16px] sm:text-[18px] md:text-[20px] lg:text-[24px] whitespace-nowrap">
               Pages
             </h3>
           </div>
 
           {/* Utility Pages */}
-          <div className="flex-shrink min-w-[100px]">
-            <h3 className="font-inter font-bold text-[16px] sm:text-[18px] md:text-[20px] lg:text-[24px] text-grayLight whitespace-nowrap">
+          <div>
+            <h3 className="font-inter font-bold text-[16px] sm:text-[18px] md:text-[20px] lg:text-[24px] whitespace-nowrap">
               Utility Pages
             </h3>
           </div>
 
           {/* Instagram */}
-          <div className="flex-shrink min-w-[220px]">
-            <h3 className="font-inter font-bold text-[16px] sm:text-[18px] md:text-[20px] lg:text-[24px] text-grayLight mb-3 whitespace-nowrap">
+          <div>
+            <h3 className="font-inter font-bold text-[16px] text-center sm:text-[18px] md:text-[20px] lg:text-[24px] mb-3 whitespace-nowrap">
               Follow Us On Instagram
             </h3>
             <div className="grid grid-cols-2 gap-2 sm:gap-3 md:gap-4">
