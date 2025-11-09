@@ -1,7 +1,7 @@
 import { useNavigate } from 'react-router-dom';
-import foodImage1 from "../../assets/Images/1.Home Page/Pakaging.png"
+import Pakaging from "../../assets/Images/1.Home Page/Pakaging.png"
 import foodImage2 from "../../assets/Images/1.Home Page/Menu.png"; 
-import foodImage3 from "../../assets/Images/1.Home Page/Foodora Logo.png"; 
+import foodImage3 from "../../assets/Images/1.Home Page/Foodora Logo.png";
 import foodImage4 from "../../assets/Images/1.Home Page/Ashe Reshteh X2.png"; 
 
 const DeliveryPage = () => {
@@ -18,8 +18,8 @@ const DeliveryPage = () => {
       <div className="flex flex-col lg:flex-row items-center justify-center gap-8 lg:gap-12 flex-wrap px-4">
       
         <img
-          src={foodImage1}
-          alt="Delivery Order"
+          src={Pakaging}
+          alt="Pakaging"
           className="cursor-pointer hover:scale-105 transition-transform duration-300 shadow-md rounded-[20px] w-[90%] sm:w-[400px] md:w-[450px] lg:w-[506px] aspect-square object-cover"
           onClick={() => navigate('/delivery/order')}
         />
