@@ -1,5 +1,6 @@
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import EventsSpecialpromotions from "./components/EventsSpecialpromotions";
 
 function App() {
   return (
@@ -9,7 +10,7 @@ function App() {
 
       {/* Main content */}
       <main className="flex-grow w-full max-w-[1440px] px-8 mx-auto">
-        {/* Main content goes here */}
+        <EventsSpecialpromotions />
       </main>
 
       {/* Footer */}
