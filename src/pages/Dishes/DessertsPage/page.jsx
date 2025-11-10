@@ -1,7 +1,10 @@
 import CoverDessert from "../../../assets/Images/2.Dishes/_Cover Dessert.png";
+import DessertCard from "../../../components/DessertCard";
+import sholeZardImg from "../../../assets/Images/2.Dishes/Shole Zard.png";
 
 const DessertPage = () => {
   return (
+    <>
     <section
       className="relative w-full min-h-[calc(100vh-112px)] flex flex-col md:flex-row items-center justify-center overflow-hidden -mt-[112px]"
     >
@@ -40,6 +43,15 @@ const DessertPage = () => {
         />
       </div>
     </section>
+     {/* Dessert Card Section */}
+      <section className="w-full bg-[#F7F3EB] py-12 flex">
+  <div className="flex-1 flex">
+    <DessertCard image={sholeZardImg} title="Shole Zard" calories={250} />
+  </div>
+</section>
+
+
+    </>
   );
 };
 
