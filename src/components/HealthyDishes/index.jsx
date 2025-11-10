@@ -21,21 +21,21 @@ const HealthySection = () => {
             onClick={() => navigate(item.path)}
             className="relative cursor-pointer transition-transform hover:scale-105"
           >
-           
+
             <img
               src={item.img}
               alt={item.name}
               className="w-[220px] h-[220px] md:w-[260px] md:h-[260px] lg:w-[288px] lg:h-[288px] object-cover rounded-[20px]"
             />
 
-           
+
             <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex flex-col items-center drop-shadow-lg leading-tight">
-              
+
               <p className="text-white font-inter font-bold text-[18px] md:text-[20px] lg:text-[24px] whitespace-nowrap max-w-max">
                 {item.name}
               </p>
 
-            
+
               {item.subName && (
                 <p className="text-white font-inter font-bold text-[16px] md:text-[18px] lg:text-[24px] whitespace-nowrap max-w-max">
                   {item.subName}
