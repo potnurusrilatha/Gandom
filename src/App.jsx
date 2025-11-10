@@ -40,10 +40,10 @@ function App() {
             element={
               <>
                 <HealthySection />
-
+                <AboutUs />
 
                 <EventsSpecialpromotions />
-                <AboutUs />
+
               </>
             }
           />

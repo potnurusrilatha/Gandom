@@ -3,21 +3,28 @@ import aboutImg from "../../assets/Images/1.Home Page/Kitchen.png";
 
 const AboutUs = () => {
     return (
-        <section className="relative w-full">
-
-            <img src={aboutImg} alt="Kitchen" className="w-full object-cover h-[500px]" />
+        <section className="relative w-full h-[500px] overflow-hidden mt-16">
 
 
-            <div className="absolute inset-0 bg-black/25" />
+            <img
+                src={aboutImg}
+                alt="Kitchen"
+                className="w-full h-full object-cover"
+            />
 
-            {/* متن و دکمه */}
-            <div className="absolute top-[30%] right-[10%] z-10 text-right max-w-[400px]">
-                <p className="text-white text-xl font-semibold">
-                    We provide healthy food<p>for your family.</p>
-                </p>
+
+            <div className="absolute inset-0 bg-gradient-to-l from-black/70 via-black/40 to-transparent" />
+
+
+            <div className="absolute top-1/2 right-[8%] -translate-y-1/2 z-10 text-right max-w-[420px]">
+                <h2 className="text-white text-3xl font-semibold leading-snug">
+                    We provide healthy food<br />for your family.
+                </h2>
                 <button
-                    onClick={() => window.scrollTo({ top: 900, behavior: "smooth" })}
-                    className="mt-4 px-6 py-3 bg-white text-black rounded-lg font-semibold hover:bg-gray-200 transition-colors"
+                    onClick={() =>
+                        window.scrollTo({ top: 900, behavior: "smooth" })
+                    }
+                    className="mt-5 px-6 py-3 bg-white text-black rounded-lg font-medium hover:bg-yellow-100 transition-colors"
                 >
                     More About Us
                 </button>
