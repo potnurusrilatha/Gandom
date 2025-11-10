@@ -1,12 +1,14 @@
-import {items} from "../../data/data"
+import { items } from "../../data/data"
 import { useNavigate } from "react-router-dom";
 
 const HealthySection = () => {
   const navigate = useNavigate();
 
- 
+
   return (
-    <section className="text-center mt-20 md:mt-32">
+    <section className="text-center mt-0 md:mt-4">
+
+
       {/* Heading */}
       <h2 className="font-santa font-normal text-primary text-[40px] md:text-[52px] lg:text-[64px] mb-12">
         Healthy Lifestyle

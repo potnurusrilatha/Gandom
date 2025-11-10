@@ -3,7 +3,12 @@ import aboutImg from "../../assets/Images/1.Home Page/Kitchen.png";
 
 const AboutUs = () => {
     return (
-        <section className="relative w-full h-[500px] overflow-hidden mt-16">
+        <section className="relative w-full h-[400px] overflow-hidden mt-12 mb-0">
+
+
+
+
+
 
 
             <img
