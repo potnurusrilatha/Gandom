@@ -11,14 +11,14 @@ html, body, #root {
 
 @font-face {
   font-family: 'Lexend';
-  src: url('./assets/fonts/Lexend-Light.ttf') format('truetype');
+  src: url('./src/assets/fonts/Lexend-Light.ttf') format('truetype');
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Lexend';
-  src: url('./assets/fonts/Lexend-Regular.ttf') format('truetype');
+  src: url('./src/assets/fonts/Lexend-Regular.ttf') format('truetype');
   font-weight: 400;
   font-style: normal;
 }

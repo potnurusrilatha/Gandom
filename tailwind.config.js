@@ -32,7 +32,7 @@ export default {
         grayMedium: "#D9D9D9",
         grayDark: "#1E1E1E",
         grayBorder: "#E6E6E6",
-        beigebg: "#F7F3EB"
+        beigebg: "#F7F3EB", // ✅ Added missing comma
 
         // Button colors
         buttonBg: "#E8A302",
