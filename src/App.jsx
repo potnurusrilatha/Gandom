@@ -1,5 +1,6 @@
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import Hero from "./components/Hero";
 import HealthySection from "./components/HealthyDishes";
 import EventsSpecialpromotions from "./components/EventsSpecialpromotions";
 import SoupsPage from "./pages/Dishes/SoupsPage/page.jsx";
@@ -9,6 +10,8 @@ import GymPage from "./pages/Dishes/GymPage/page.jsx";
 import Delivery from "./components/Delivery";
 import DeliveryOrderPage from "./pages/Delivery/DeliveryOrderPage/page.jsx";
 import CreateBoxMenuPage from "./pages/Delivery/CreateBoxMenu/page.jsx";
+import AboutUs from "./components/AboutUs/AboutUs";
+import Card from "./components/Card"
 
 import { Routes, Route } from "react-router-dom";
 
