@@ -71,9 +71,9 @@ const DessertCard = ({ title, calories, description, image }) => {
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
           >
-            <circle cx="6.5" cy="6.5" r="6.5" fill="grayMedium" />
-            <circle cx="27.5" cy="6.5" r="6.5" fill="grayMedium" />
-            <circle cx="48.5" cy="6.5" r="6.5" fill="grayMedium" />
+            <circle cx="6.5" cy="6.5" r="6.5" fill="#D9D9D9" />
+            <circle cx="27.5" cy="6.5" r="6.5" fill="#D9D9D9" />
+            <circle cx="48.5" cy="6.5" r="6.5" fill="#D9D9D9" />
           </svg>
         </div>
 
