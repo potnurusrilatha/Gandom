@@ -2,27 +2,27 @@ import CoverDishes from "../../../assets/Images/2.Dishes/_Cover Side Dishes.png"
 
 const SidedishesPage = () => {
   return (
-    <>
+     <>
       <section
         className="relative w-full min-h-[calc(100vh-90px)] flex flex-col md:flex-row items-center justify-center overflow-hidden -mt-[112px] pb-16 sm:pb-20 md:pb-24" // 👈 Added padding-bottom
       >
-        {/* Left Section — Text */}
+       
         <div className="relative flex flex-col justify-center items-center w-full md:w-1/2 px-4 sm:px-8 md:px-16 lg:px-24 h-full text-center">
           {/* Side Dishes */}
           <h1
             className="text-primaryHover font-lexend font-bold leading-tight tracking-tight"
             style={{
-              fontSize: "clamp(36px, 5vw, 80px)", // slightly smaller
+              fontSize: "clamp(36px, 5vw, 80px)", 
               lineHeight: "132%",
               letterSpacing: "-0.02em",
               whiteSpace: "nowrap",
-              marginBottom: "clamp(20px, 4vh, 40px)", // space between texts
+              marginBottom: "clamp(20px, 4vh, 40px)", 
             }}
           >
             Side Dishes,
           </h1>
 
-          {/* Pickles and Snacks */}
+           {/* Pickles and Snacks */}
           <h2
             className="font-santa"
             style={{
@@ -32,7 +32,7 @@ const SidedishesPage = () => {
               fontSize: "clamp(36px, 5vw, 94.25px)",
               lineHeight: "132%",
               letterSpacing: "-0.02em",
-              transform: "rotate(-3.62deg)", // rotate to the left
+              transform: "rotate(-3.62deg)", 
               whiteSpace: "nowrap",
               textAlign: "center",
             }}
@@ -40,8 +40,7 @@ const SidedishesPage = () => {
             Pickles and snacks
           </h2>
         </div>
-
-        {/* Right Section — Image */}
+       {/* Right Section — Image */}
         <div className="relative flex items-center justify-center w-full md:w-1/2 h-auto">
           <img
             src={CoverDishes}
@@ -55,5 +54,4 @@ const SidedishesPage = () => {
     </>
   );
 };
-
-export default SidedishesPage;
+export default SidedishesPage
