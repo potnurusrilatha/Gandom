@@ -112,7 +112,7 @@ const WaffelsCard = ({ title, calories, description, image }) => {
           </div>
         </div>
 
-        {/* Calories */}
+       
         <p
           style={{
             fontFamily: "Inter, sans-serif",
