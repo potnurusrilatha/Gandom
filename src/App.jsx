@@ -9,6 +9,8 @@ import GymPage from "./pages/Dishes/GymPage/page.jsx";
 import Delivery from "./components/Delivery";
 import DeliveryOrderPage from "./pages/Delivery/DeliveryOrderPage/page.jsx";
 import CreateBoxMenuPage from "./pages/Delivery/CreateBoxMenu/page.jsx";
+import AboutUsPage from "./pages/AboutUs/about-us"
+
 
 import { Routes, Route } from "react-router-dom";
 
@@ -29,6 +31,7 @@ function App() {
                 <HealthySection />
                 <EventsSpecialpromotions />
                 <Delivery />
+
               </>
             }
           />
@@ -42,7 +45,11 @@ function App() {
           {/* Delivery pages */}
           <Route path="/delivery/order" element={<DeliveryOrderPage />} />
           <Route path="/delivery/create-box-menu" element={<CreateBoxMenuPage />} />
+          <Route path="/about-us" element={<AboutUsPage />} />
+
+
         </Routes>
+
       </main>
 
       {/* Footer */}
