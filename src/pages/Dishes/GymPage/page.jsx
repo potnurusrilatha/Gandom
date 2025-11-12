@@ -1,3 +1,11 @@
+import React from "react";
+import coverImage from "../../../assets/Images/7.Gym/Covergym.png"
+import img1 from "../../../assets/Images/7.Gym/Eating Waffle.png"
+import img2 from "../../../assets/Images/7.Gym/Eating soup.png"
+import img3 from "../../../assets/Images/7.Gym/Maching.png"
+
+
+
 const GymPage = () => {
     return (
         <div className="py-8">
