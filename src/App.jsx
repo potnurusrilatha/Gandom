@@ -16,7 +16,7 @@ import { Routes, Route } from "react-router-dom";
 
 function App() {
   return (
-    <div className="flex flex-col min-h-screen w-full bg-gray-100">
+    <div className="flex flex-col min-h-screen w-full bg-grayLight">
       {/* Header */}
       <Header />
 
