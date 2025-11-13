@@ -13,6 +13,7 @@ import AboutUsPage from "./pages/AboutUs/about-us"
 
 
 import { Routes, Route } from "react-router-dom";
+import AboutUs from "./components/AboutUs";
 
 function App() {
   return (
@@ -31,7 +32,7 @@ function App() {
                 <HealthySection />
                 <EventsSpecialpromotions />
                 <Delivery />
-
+                <AboutUs />
               </>
             }
           />
