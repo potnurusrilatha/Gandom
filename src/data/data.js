@@ -1,27 +1,28 @@
 import SoupsImg from "../assets/Images/1.Home Page/Soups.png";
 import DessertsImg from "../assets/Images/1.Home Page/Desserts.png";
 import WafflesImg from "../assets/Images/1.Home Page/Waffles.png";
-import GymImg from "../assets/Images/1.Home Page/Gym.png";
+import SideDishesImg from "../assets/Images/1.Home Page/SideDishes.png";
 
 export const items = [
   {
     name: "Soups",
     img: SoupsImg,
-    path: "/dishes/soups", 
+    path: "/dishes/SoupsPage",
   },
   {
     name: "Desserts",
     img: DessertsImg,
-    path: "/dishes/desserts", 
+    path: "/dishes/DessertsPage",
   },
   {
     name: "Waffles",
     img: WafflesImg,
-    path: "/dishes/waffles", 
+    path: "/dishes/WaffelsPage",
   },
   {
-    name: "Gym",
-    img: GymImg,
-    path: "/dishes/gym",
+    name: "Side Dishes",
+    subName: "Pickles and Snacks",
+    img: SideDishesImg,
+    path: "/dishes/SidedishesPage",
   },
 ];

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import CoverDishes from "../../../assets/Images/2.Dishes/_Cover Side Dishes.png";
 
 const SidedishesPage = () => {
@@ -55,3 +56,13 @@ const SidedishesPage = () => {
   );
 };
 export default SidedishesPage
+=======
+const SideDishesPage = () => {
+    return (
+        <div className="py-8">
+            <h1 className="text-4xl font-bold mb-4">SideDishesPage</h1>
+        </div>
+    );
+}
+export default SideDishesPage;
+>>>>>>> T5/feature/Healthy-Dishes-Grid
