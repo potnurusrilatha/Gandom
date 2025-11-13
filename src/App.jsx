@@ -5,7 +5,7 @@ import EventsSpecialpromotions from "./components/EventsSpecialpromotions";
 import SoupsPage from "./pages/Dishes/SoupsPage/page.jsx";
 import DessertsPage from "./pages/Dishes/DessertsPage/page.jsx";
 import WafflesPage from "./pages/Dishes/WaffelsPage/page.jsx";
-import GymPage from "./pages/Dishes/GymPage/page.jsx";
+import SidedishesPage from "./pages/Dishes/SidedishesPage/page.jsx";
 import Delivery from "./components/Delivery";
 import DeliveryOrderPage from "./pages/Delivery/DeliveryOrderPage/page.jsx";
 import CreateBoxMenuPage from "./pages/Delivery/CreateBoxMenu/page.jsx";
@@ -16,7 +16,7 @@ import { Routes, Route } from "react-router-dom";
 
 function App() {
   return (
-    <div className="flex flex-col min-h-screen w-full bg-gray-100">
+    <div className="flex flex-col min-h-screen w-full bg-grayLight">
       {/* Header */}
       <Header />
 
@@ -40,7 +40,7 @@ function App() {
           <Route path="/dishes/soups" element={<SoupsPage />} />
           <Route path="/dishes/desserts" element={<DessertsPage />} />
           <Route path="/dishes/waffles" element={<WafflesPage />} />
-          <Route path="/dishes/gym" element={<GymPage />} />
+          <Route path="/dishes/sidedishesPage" element={<SidedishesPage />} />
 
           {/* Delivery pages */}
           <Route path="/delivery/order" element={<DeliveryOrderPage />} />
