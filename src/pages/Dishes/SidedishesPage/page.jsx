@@ -1,20 +1,10 @@
-<<<<<<< HEAD
-const SideDishesPage = () => {
-    return (
-        <div className="py-8">
-            <h1 className="text-4xl font-bold mb-4">SideDishesPage</h1>
-        </div>
-    );
-}
-export default SideDishesPage;
-=======
 import CoverDishes from "../../../assets/Images/2.Dishes/_Cover Side Dishes.png";
 
 const SidedishesPage = () => {
   return (
      <>
       <section
-        className="relative w-full min-h-[calc(100vh-90px)] flex flex-col md:flex-row items-center justify-center overflow-hidden -mt-[112px] pb-16 sm:pb-20 md:pb-24" // 👈 Added padding-bottom
+        className="relative w-full min-h-[calc(100vh-90px)] flex flex-col md:flex-row items-center justify-center overflow-hidden -mt-[112px] pb-16 sm:pb-20 md:pb-24" 
       >
        
         <div className="relative flex flex-col justify-center items-center w-full md:w-1/2 px-4 sm:px-8 md:px-16 lg:px-24 h-full text-center">
@@ -65,4 +55,3 @@ const SidedishesPage = () => {
   );
 };
 export default SidedishesPage
->>>>>>> T15/feature/Dishes-sidedishes
