@@ -1,4 +1,3 @@
-import { Routes, Route } from "react-router-dom";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import HealthySection from "./components/HealthyDishes";
@@ -10,7 +9,7 @@ import SidedishesPage from "./pages/Dishes/SidedishesPage/page.jsx";
 
 function App() {
   return (
-    <div className="flex flex-col min-h-screen w-full bg-[theme(colors.grayLight)]">
+    <div className="flex flex-col min-h-screen w-full bg-gray-100">
       {/* Header */}
       <Header />
 
@@ -23,6 +22,8 @@ function App() {
               <>
                 <HealthySection />
                 <EventsSpecialpromotions />
+                <Delivery />
+
               </>
             }
           />
@@ -31,6 +32,7 @@ function App() {
           <Route path="/dishes/waffelsPage" element={<WaffelsPage />} />
           <Route path="/dishes/sidedishesPage" element={<SidedishesPage />} />
         </Routes>
+
       </main>
 
       {/* Footer */}
