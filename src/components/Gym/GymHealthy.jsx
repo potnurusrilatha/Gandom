@@ -7,7 +7,6 @@ const GymHealthy = () => {
                 className="relative w-full max-w-[1444px] h-[681px] rounded-[20px] overflow-hidden shadow-lg bg-[#FFF5E9]"
             >
 
-                {/* Right Image */}
                 <div className="absolute inset-y-0 right-0 w-[80%]">
                     <img
                         src={coverGymHealthy}
@@ -15,11 +14,10 @@ const GymHealthy = () => {
                         className="w-full h-full object-cover"
                     />
 
-                    {/* Gradient */}
+
                     <div className="absolute inset-y-0 left-0 w-1/3 bg-gradient-to-l from-transparent to-[#FFF5E9]" />
                 </div>
 
-                {/* Text */}
                 <div className="relative z-10 flex h-full items-center px-8 md:px-16">
                     <div className="max-w-[520px] space-y-6">
                         <h2 className="text-[32px] md:text-[40px] lg:text-[48px] font-semibold leading-tight text-[#3b6f22]">
