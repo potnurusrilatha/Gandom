@@ -41,14 +41,14 @@ const SoupNutritionTable = ({ nutrition }) => {
                 lineHeight: "130%",
                 color: "#000000",
                 borderBottom: "1px solid #000000",
-                whiteSpace: "nowrap", // keep Amount in one line
+                whiteSpace: "nowrap", 
               }}
             >
               Amount
             </th>
             <th
               style={{
-                padding: "8px 32px", // increase padding-left for gap
+                padding: "8px 32px", 
                 textAlign: "left",
                 fontFamily: "Inter, sans-serif",
                 fontWeight: 600,
@@ -89,14 +89,14 @@ const SoupNutritionTable = ({ nutrition }) => {
                     lineHeight: "130%",
                     color: "#000000",
                     borderBottom: "1px solid #000000",
-                    whiteSpace: "nowrap", // one line
+                    whiteSpace: "nowrap", 
                   }}
                 >
                   {item.amount}
                 </td>
                 <td
                   style={{
-                    padding: "8px 32px", // same as header
+                    padding: "8px 32px", 
                     fontFamily: "Inter, sans-serif",
                     fontWeight: 400,
                     fontSize: isMicro ? "12px" : "16px",

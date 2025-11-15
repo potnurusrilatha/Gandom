@@ -3,7 +3,6 @@ import SoupNutritionTable from "../SoupsNutrionsTable";
 const SoupsCard = ({ title, price, description, image, nutrition }) => {
   return (
     <div className="w-full bg-white rounded-2xl p-4 flex flex-col md:flex-row gap-6 shadow-md">
-      {/* Left side: Image + circles + text */}
       <div className="flex flex-col flex-shrink-0 md:w-[370px]">
         <div className="rounded-xl overflow-hidden">
           <img
@@ -29,8 +28,6 @@ const SoupsCard = ({ title, price, description, image, nutrition }) => {
         <p className="text-[#426B1F] font-semibold text-lg ">{price}</p>
         <p className="text-gray-500 font-normal text-sm mt-2">{description}</p>
       </div>
-
-      {/* Right side: Nutrition Table */}
       <div className="flex-1 min-w-[250px]">
         <SoupNutritionTable nutrition={nutrition} />
       </div>
