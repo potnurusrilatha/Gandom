@@ -1,7 +1,6 @@
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import HealthySection from "./components/HealthyDishes";
-import EventsSpecialpromotions from "./components/EventsSpecialpromotions";
 import SoupsPage from "./pages/Dishes/SoupsPage/page.jsx";
 import DessertsPage from "./pages/Dishes/DessertsPage/page.jsx"
 import WafflesPage from "./pages/Dishes/WafflesPage/page.jsx"; 
@@ -10,6 +9,8 @@ import Delivery from "./components/Delivery";
 import DeliveryOrderPage from "./pages/Delivery/DeliveryOrderPage/page.jsx";
 import CreateBoxMenuPage from "./pages/Delivery/CreateBoxMenu/page.jsx";
 import AboutUsPage from "./pages/AboutUs/about-us.jsx";
+import HomeEvents from "./components/HomeEvents";
+import EventsPage from "./pages/EventsPage/page.jsx";
 
 import { Routes, Route } from "react-router-dom";
 
@@ -26,7 +27,8 @@ function App() {
             element={
               <>
                 <HealthySection />
-                <EventsSpecialpromotions />
+                <HomeEvents />
+
                 <Delivery />
               </>
             }
@@ -41,7 +43,11 @@ function App() {
           {/* Delivery pages */}
           <Route path="/delivery/order" element={<DeliveryOrderPage />} />
           <Route path="/delivery/create-box-menu" element={<CreateBoxMenuPage />} />
+
+          {/* Other pages */}
           <Route path="/about-us" element={<AboutUsPage />} />
+          <Route path="/events" element={<EventsPage />} />
+
         </Routes>
       </main>
 
