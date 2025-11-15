@@ -17,12 +17,12 @@ export const items = [
   {
     name: "Waffles",
     img: WafflesImg,
-    path: "/dishes/WaffelsPage",
+    path: "/dishes/waffles",
   },
   {
     name: "Side Dishes",
     subName: "Pickles and Snacks",
     img: SideDishesImg,
-    path: "/dishes/SidedishesPage",
+    path: "/dishes/sidedishes",
   },
 ];

@@ -8,7 +8,7 @@ const SidedishesPage = () => {
       >
        
         <div className="relative flex flex-col justify-center items-center w-full md:w-1/2 px-4 sm:px-8 md:px-16 lg:px-24 h-full text-center">
-          {/* Side Dishes */}
+       
           <h1
             className="text-primaryHover font-lexend font-bold leading-tight tracking-tight"
             style={{
@@ -22,7 +22,7 @@ const SidedishesPage = () => {
             Side Dishes,
           </h1>
 
-           {/* Pickles and Snacks */}
+          
           <h2
             className="font-santa"
             style={{
@@ -40,7 +40,7 @@ const SidedishesPage = () => {
             Pickles and snacks
           </h2>
         </div>
-       {/* Right Section — Image */}
+     
         <div className="relative flex items-center justify-center w-full md:w-1/2 h-auto">
           <img
             src={CoverDishes}

@@ -3,7 +3,7 @@ import Footer from "./components/Footer";
 import HealthySection from "./components/HealthyDishes";
 import EventsSpecialpromotions from "./components/EventsSpecialpromotions";
 import SoupsPage from "./pages/Dishes/SoupsPage/page.jsx";
-import DessertsPage from "./pages/Dishes/DessertsPage/page.jsx";
+import DessertsPage from "./pages/Dishes/DessertsPage/page.jsx"
 import WafflesPage from "./pages/Dishes/WafflesPage/page.jsx"; 
 import SidedishesPage from "./pages/Dishes/SidedishesPage/page.jsx";
 import Delivery from "./components/Delivery";
@@ -20,6 +20,7 @@ function App() {
 
       <main className="flex-grow w-full max-w-[1440px] px-8 mx-auto">
         <Routes>
+          {/* Home page */}
           <Route
             path="/"
             element={
@@ -36,7 +37,7 @@ function App() {
           <Route path="/dishes/desserts" element={<DessertsPage />} />
           <Route path="/dishes/waffles" element={<WafflesPage />} />
           <Route path="/dishes/sidedishes" element={<SidedishesPage />} /> {/* fixed */}
-
+          
           {/* Delivery pages */}
           <Route path="/delivery/order" element={<DeliveryOrderPage />} />
           <Route path="/delivery/create-box-menu" element={<CreateBoxMenuPage />} />
