@@ -1,27 +1,39 @@
-// src/components/SoupsCard/index.jsx
-const SoupsCard = ({ title, calories, description, image }) => {
+import SoupNutritionTable from "../SoupsNutrionsTable";
+
+const SoupsCard = ({ title, price, description, image, nutrition }) => {
   return (
-    <div className="bg-white rounded-xl p-4 shadow-md max-w-[400px]">
-      {/* Image */}
-      <div className="overflow-hidden rounded-lg">
-        <img
-          src={image}
-          alt={title}
-          className="w-full h-auto object-cover"
-        />
-      </div>
-
-     
-      <div className="mt-4 flex justify-between items-center">
-        <h3 className="text-lg font-semibold">{title}</h3>
-        <div className="w-10 h-10 border border-black rounded-full flex items-center justify-center text-xl font-thin">
-          +
+    <div className="w-full bg-white rounded-2xl p-4 flex flex-col md:flex-row gap-6 shadow-md">
+      {/* Left side: Image + circles + text */}
+      <div className="flex flex-col flex-shrink-0 md:w-[370px]">
+        <div className="rounded-xl overflow-hidden">
+          <img
+            src={image}
+            alt={`${title} - ${description}`}
+            className="w-[370px] h-[276px] object-cover rounded-xl"
+          />
         </div>
+
+        <div className="flex justify-center gap-2 mt-2">
+          <div className="w-[13px] h-[13px] rounded-full bg-gray-300" />
+          <div className="w-[13px] h-[13px] rounded-full bg-gray-300" />
+          <div className="w-[13px] h-[13px] rounded-full bg-gray-300" />
+        </div>
+
+        <div className="flex justify-between items-center">
+          <h3 className="text-black font-semibold text-lg">{title}</h3>
+          <button className="w-10 h-10 border border-black rounded-full flex items-center justify-center text-xl font-light">
+            +
+          </button>
+        </div>
+
+        <p className="text-[#426B1F] font-semibold text-lg ">{price}</p>
+        <p className="text-gray-500 font-normal text-sm mt-2">{description}</p>
       </div>
 
-      
-      <p className="mt-1 font-semibold text-green-700">{calories}</p>
-      <p className="mt-2 text-gray-500">{description}</p>
+      {/* Right side: Nutrition Table */}
+      <div className="flex-1 min-w-[250px]">
+        <SoupNutritionTable nutrition={nutrition} />
+      </div>
     </div>
   );
 };

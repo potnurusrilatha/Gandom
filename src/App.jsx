@@ -4,7 +4,7 @@ import HealthySection from "./components/HealthyDishes";
 import EventsSpecialpromotions from "./components/EventsSpecialpromotions";
 import SoupsPage from "./pages/Dishes/SoupsPage/page.jsx";
 import DessertsPage from "./pages/Dishes/DessertsPage/page.jsx";
-import WafflesPage from "./pages/Dishes/WafflesPage/page.jsx"; // fixed typo
+import WafflesPage from "./pages/Dishes/WafflesPage/page.jsx"; 
 import SidedishesPage from "./pages/Dishes/SidedishesPage/page.jsx";
 import Delivery from "./components/Delivery";
 import DeliveryOrderPage from "./pages/Delivery/DeliveryOrderPage/page.jsx";
