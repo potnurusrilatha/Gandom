@@ -1,7 +1,11 @@
 import CoverDessert from "../../../assets/Images/2.Dishes/_Cover Dessert.png";
+import DessertCard from "../../../components/DessertCard";
+import desserts from "../../../data/dessertsdata.js";
 
-const DessertPage = () => {
+
+const DessertsPage = () => {
   return (
+    <>
     <section
       className="relative w-full min-h-[calc(100vh-112px)] flex flex-col md:flex-row items-center justify-center overflow-hidden -mt-[112px]"
     >
@@ -40,7 +44,21 @@ const DessertPage = () => {
         />
       </div>
     </section>
+  {/* Dessert Cards */}
+      <section className="flex flex-col items-center px-4 sm:px-8 md:px-16 py-12 gap-6 mb-8">
+        {desserts.map((item, idx) => (
+          <DessertCard 
+            key={idx}
+            title={item.title}
+            price={item.price}
+            description={item.description}
+            image={item.image}
+            nutrition={item.nutrition}
+          />
+        ))}
+      </section>
+    </>
   );
 };
 
-export default DessertPage;
+export default DessertsPage;
