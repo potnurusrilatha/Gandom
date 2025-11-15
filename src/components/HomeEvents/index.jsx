@@ -1,6 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import CateringImg from "../../assets/Images/1.Home Page/Catering.png";
+import CoverImg from "../../assets/Images/4.Events/_Cover Special Promotion.png";
 
 const EventsSection = () => {
   const navigate = useNavigate();
@@ -12,8 +12,8 @@ const EventsSection = () => {
   return (
     <section className="relative w-full h-[500px] lg:h-[600px] overflow-hidden mt-16 lg:mt-24">
       <img
-        src={CateringImg}
-        alt="Catering Buffet"
+        src={CoverImg}
+        alt="Special Promotion Cover"
         className="absolute top-0 left-0 w-full h-full object-cover"
       />
       <div className="absolute inset-0 bg-black/20"></div>
