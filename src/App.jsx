@@ -45,8 +45,8 @@ function App() {
           <Route path="/dishes/soups" element={<SoupsPage />} />
           <Route path="/dishes/desserts" element={<DessertsPage />} />
           <Route path="/dishes/waffles" element={<WafflesPage />} />
-          <Route path="/dishes/sidedishes" element={<SidedishesPage />} /> 
-         
+          <Route path="/dishes/sidedishes" element={<SidedishesPage />} />
+
           {/* Delivery pages */}
           <Route path="/delivery/order" element={<DeliveryOrderPage />} />
           <Route path="/delivery/createboxmenu" element={<CreateBoxMenuPage />} />
