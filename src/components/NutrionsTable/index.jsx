@@ -1,4 +1,4 @@
-const SoupNutritionTable = ({ nutrition }) => {
+const NutritionTable = ({ nutrition }) => {
   return (
     <div
       style={{
@@ -116,4 +116,4 @@ const SoupNutritionTable = ({ nutrition }) => {
   );
 };
 
-export default SoupNutritionTable;
+export default NutritionTable;

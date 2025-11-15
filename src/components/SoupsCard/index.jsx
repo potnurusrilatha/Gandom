@@ -1,4 +1,4 @@
-import SoupNutritionTable from "../SoupsNutrionsTable";
+import NutritionTable from "../NutrionsTable";
 
 const SoupsCard = ({ title, price, description, image, nutrition }) => {
   return (
@@ -29,7 +29,7 @@ const SoupsCard = ({ title, price, description, image, nutrition }) => {
         <p className="text-gray-500 font-normal text-sm mt-2">{description}</p>
       </div>
       <div className="flex-1 min-w-[250px]">
-        <SoupNutritionTable nutrition={nutrition} />
+        <NutritionTable nutrition={nutrition} />
       </div>
     </div>
   );
