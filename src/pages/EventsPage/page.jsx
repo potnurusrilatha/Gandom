@@ -1,16 +1,16 @@
-import React from "react";
-import CoverEvents from "../../assets/Images/1.Home Page/Catering.png";
+import CoverEvents from "../../assets/Images/4.Events/_Cover Special Promotion.png";
 import EventsCard from "../../components/EventsCard"; 
-
-import { events } from "../../data/events"; 
+import { eventsData as events } from "../../data/events";
 
 const EventsPage = () => {
   return (
-    <section className="w-full min-h-[calc(100vh-90px)] -mt-[90px] pb-16 sm:pb-20 md:pb-24">
+    <section className="w-full min-h-[calc(100vh-90px)] pb-16 sm:pb-20 md:pb-24">
 
-      {/* Top banner section */}
-      <div className="relative w-full md:h-[calc(100vh-90px)] flex flex-col md:flex-row items-center justify-center overflow-hidden">
-        <div className="relative w-full md:w-1/2 flex flex-col justify-center items-center text-center px-4 sm:px-8 md:px-16 lg:px-24 h-full">
+      {/* Hero Section */}
+      <div className="relative w-full md:h-[calc(100vh-90px)] flex flex-col md:flex-row items-center justify-center overflow-hidden px-4 sm:px-6">
+        
+        {/* Text Section */}
+        <div className="relative w-full md:w-1/2 flex flex-col justify-center items-center text-center h-full">
           <h1
             style={{
               fontFamily: "Inter, sans-serif",
@@ -21,12 +21,13 @@ const EventsPage = () => {
               color: "#DEA401",
               textAlign: "center",
             }}
+            className="mb-3 sm:mb-4"
           >
             Events and
           </h1>
 
           <h2
-            className="font-santa"
+            className="font-santa whitespace-normal md:whitespace-nowrap"
             style={{
               color: "#E9610C",
               fontWeight: 400,
@@ -34,7 +35,6 @@ const EventsPage = () => {
               lineHeight: "132%",
               letterSpacing: "-0.02em",
               transform: "rotate(-3.62deg)",
-              whiteSpace: "nowrap",
               marginTop: "0.5rem",
               marginLeft: "clamp(0px, 5vw, 80px)",
             }}
@@ -43,7 +43,8 @@ const EventsPage = () => {
           </h2>
         </div>
 
-        <div className="relative w-full md:w-1/2 flex items-center justify-center">
+        {/* Image Section */}
+        <div className="relative w-full md:w-1/2 flex items-center justify-center mt-6 md:mt-0">
           <img
             src={CoverEvents}
             alt="Events Cover"
@@ -52,16 +53,18 @@ const EventsPage = () => {
         </div>
       </div>
 
-      {/* Events cards section */}
-      <div className="flex flex-col gap-12 px-6 lg:px-24 py-16">
-      {events.map((event, idx) => (
-        <EventsCard
-          key={idx}
-          image={event.image}
-          description={event.description}
-        />
-      ))}
-    </div>
+      {/* Events Cards Section */}
+      <div className="flex flex-col gap-12 px-4 sm:px-6 lg:px-24 py-16 max-w-7xl mx-auto">
+        {events.map((event, idx) => (
+          <EventsCard
+            key={idx}
+            title={event.title}
+            image={event.image}
+            description={event.description}
+            isSpecial={idx === 0 || idx === 1} 
+          />
+        ))}
+      </div>
     </section>
   );
 };

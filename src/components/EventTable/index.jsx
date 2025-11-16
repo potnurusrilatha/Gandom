@@ -1,22 +1,19 @@
-import React from "react";
-
-const EventTable = ({ description }) => {
+const EventText = ({ description }) => {
   return (
     <div
       style={{
-        width: "793px",
-        maxWidth: "100%",
-        overflowX: "auto",
-        marginTop: "16px",
-        border: "1px solid #000000",
-        borderRadius: "12px",
-        padding: "16px",
+        fontFamily: "Inter, sans-serif",
+        fontSize: "16px",
+        lineHeight: "150%",
+        letterSpacing: "-1.1%",
+        color: "#333",
+        whiteSpace: "pre-line",
+        padding: "20px",           
       }}
     >
-      {/* Only description */}
-      <p style={{ fontSize: "14px", color: "#555" }}>{description}</p>
+      {description}
     </div>
   );
 };
 
-export default EventTable;
+export default EventText;
