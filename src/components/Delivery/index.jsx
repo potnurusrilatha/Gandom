@@ -4,7 +4,7 @@ import foodImage2 from "../../assets/Images/1.Home Page/Menu.png";
 import foodImage3 from "../../assets/Images/1.Home Page/Foodora Logo.png";
 import foodImage4 from "../../assets/Images/1.Home Page/Ashe Reshteh X2.png"; 
 
-const DeliveryPage = () => {
+const Delivery = () => {
   const navigate = useNavigate();
 
   return (
@@ -50,4 +50,4 @@ const DeliveryPage = () => {
   );
 };
 
-export default DeliveryPage;
+export default Delivery;
