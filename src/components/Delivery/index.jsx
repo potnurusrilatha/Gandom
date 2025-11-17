@@ -72,7 +72,7 @@ const Delivery = () => {
             lg:w-[243px] lg:h-[243px]
             object-cover shadow-md
           "
-          onClick={() => navigate('/delivery/create-box-menu')}
+          onClick={() => navigate('/delivery/createboxmenu')}
         />
 
         <img

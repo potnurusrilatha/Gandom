@@ -42,7 +42,7 @@ function App() {
           
           {/* Delivery pages */}
           <Route path="/delivery/order" element={<DeliveryOrderPage />} />
-          <Route path="/delivery/create-box-menu" element={<CreateBoxMenuPage />} />
+          <Route path="/delivery/createboxmenu" element={<CreateBoxMenuPage />} />
 
           {/* Other pages */}
           <Route path="/about-us" element={<AboutUsPage />} />
