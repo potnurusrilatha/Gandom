@@ -1,11 +1,10 @@
-import Waffle from "../../../assets/Images/2.Dishes/Waffle.png";
 import CoverDelivery from "../../../assets/Images/5.Delivery/_Cover Delivery.png";
 import DeliveryCard from "../../../components/DeliveryCard";
-import WaffleVegetarianHerb from "../../../assets/Images/2.Dishes/Waffle - Vegetarian Herb.png";
-import HerbalDelightWaffle from "../../../assets/Images/2.Dishes/Waffle - Herbal Delight.png";
-import MatchaWaffle from "../../../assets/Images/2.Dishes/Waffle - Matcha.png";
-import BeetrootWaffle from "../../../assets/Images/2.Dishes/Waffle - Beetroot.png";
-import CarrotWaffle from "../../../assets/Images/2.Dishes/Waffle - Carrots.png";
+import FoodoraAsheReshteh from "../../../assets/Images/5.Delivery/Foodora - Ashe Reshteh.png";
+import FoodoraAsheDoogh from "../../../assets/Images/5.Delivery/Foodora - Ashe Doogh.png";
+import FoodoraAsheAnar from "../../../assets/Images/5.Delivery/Foodora - Ashe Anar.png";
+import FoodoraSholeZard from "../../../assets/Images/5.Delivery/Foodora - Shole Zard.png";
+import MenuGandom from "../../../assets/Images/5.Delivery/Menu Gandom.png";
 
 import { useRef, useEffect, useState } from "react";
 
@@ -46,12 +45,11 @@ const DeliveryOrderPage = () => {
               <span key={idx}>{letter}</span>
             ))}
           </h1>
-
-          {/* Order aligned under "i" */}
+          {/* Order Heading */}
           <h2
             className="font-santa absolute flex items-center justify-center"
             style={{
-              color: "#0C8CE9",
+              color: "#EA3FB8",
               fontWeight: 400,
               fontStyle: "normal",
               fontSize: "clamp(36px, 5vw, 94px)",
@@ -83,34 +81,34 @@ const DeliveryOrderPage = () => {
       <section className="bg-grayLight px-4 sm:px-8 md:px-16 py-12">
   <div className="w-full max-w-5xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
     <DeliveryCard
-      title="Soy Waffle"
-      calories="220–300 kcal"
-      description="Waffle Ingredients"
-      image={Waffle}
+      title="Ashe Reshteh"
+      calories="300–350 kcal"
+      description="Noodle, Herb and Bean Pottage"
+      image={FoodoraAsheReshteh}
     />
     <DeliveryCard
-      title="Vegetarian Herb Waffle"
-      calories="250–320 kcal"
-      description="Waffle Ingredients"
-      image={WaffleVegetarianHerb}
+      title="Ashe Doogh"
+      calories="250–300 kcal"
+      description="Refreshing Yogurt Soup"
+      image={FoodoraAsheDoogh}
     />
     <DeliveryCard
-      title="Herbal Delight Waffle"
-      calories="250–320 kcal"
-      description="Waffle Ingredients"
-      image={HerbalDelightWaffle}
+      title="Ashe Anar"
+      calories="260–320 kcal"
+      description="Pomegranate and Herb Pottage"
+      image={FoodoraAsheAnar}
     />
     <DeliveryCard
-      title="Match Waffle"
-      calories="250–320 kcal"
-      description="Waffle Ingredients"
-      image={MatchaWaffle}
+      title="Shole Zard"
+      calories="180–230 kcal"
+      description="Saffron Rice Pudding"
+      image={FoodoraSholeZard}
     />
     <DeliveryCard
-      title="Beetroot Waffle"
-      calories="250–320 kcal"
-      description="Waffle Ingredients"
-      image={BeetrootWaffle}
+      title="Menu Your Own Box"
+      calories="it's your dish"
+      description="9 different dishes"
+      image={MenuGandom}
     />
   </div>
 </section>
