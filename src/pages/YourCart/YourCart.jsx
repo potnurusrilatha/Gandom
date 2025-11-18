@@ -42,7 +42,7 @@ const YourCart = () => {
 
             {/* ---------- CART CONTENT ---------- */}
             <div className="relative max-w-[1005px] mx-auto px-6 md:px-0 pt-16 pb-24">
-                {/* ردیف بالا: عنوان و لینک */}
+
                 <div className="flex items-center justify-between mb-8">
                     <h2 className="text-[22px] font-semibold text-[#F5C242]">Your Cart</h2>
                     <button className="text-sm font-medium text-[#0B8EDD] hover:underline">
@@ -94,7 +94,7 @@ const YourCart = () => {
 
 
                 <div className="flex flex-col md:flex-row gap-10 items-start">
-                    {/* توضیحات سفارش */}
+
                     <div className="flex-1 w-full">
                         <p className="text-sm font-medium text-[#333] mb-3">
                             Order special instructions
