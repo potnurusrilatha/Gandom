@@ -1,5 +1,3 @@
-
-
 const WafflesPage = () => {
   return (
     <div>

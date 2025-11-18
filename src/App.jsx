@@ -19,7 +19,7 @@ function App() {
       <Header />
 
       {/* Main content */}
-      <main className="flex-grow w-full max-w-[1440px] px-8 mx-auto">
+      <main className="flex-grow w-full max-w-[1440px] mx-auto">
         <Routes>
           {/* Home page */}
           <Route
