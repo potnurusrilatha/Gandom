@@ -1,3 +1,4 @@
+
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import HealthySection from "./components/HealthyDishes";
@@ -18,6 +19,10 @@ import AboutUsPage from "./pages/AboutUs/about-us.jsx";
 import YourCart from "./pages/YourCart/YourCart";
 import HomeEvents from "./components/HomeEvents";
 import EventsPage from "./pages/EventsPage/page.jsx";
+import AboutUsPage from "./pages/AboutUs/about-us"
+
+
+
 import { Routes, Route } from "react-router-dom";
 import GymHealthy from "./components/Gym/GymHealthy";
 
@@ -49,8 +54,8 @@ function App() {
           <Route path="/dishes/soups" element={<SoupsPage />} />
           <Route path="/dishes/desserts" element={<DessertsPage />} />
           <Route path="/dishes/waffles" element={<WafflesPage />} />
-          <Route path="/dishes/sidedishes" element={<SidedishesPage />} />
-          
+          <Route path="/dishes/gym" element={<GymPage />} />
+
           {/* Delivery pages */}
           <Route path="/delivery/order" element={<DeliveryOrderPage />} />
           <Route path="/delivery/createboxmenu" element={<CreateBoxMenuPage />} />
@@ -64,6 +69,8 @@ function App() {
       <Cards />
       {/* Footer */}
 
+      <Cards />
+      {/* Footer */}
       <Footer />
     </div>
   );
