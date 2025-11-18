@@ -40,7 +40,7 @@ const YourCart = () => {
 
 
 
-            {/* ---------- CART CONTENT ---------- */}
+
             <div className="relative max-w-[1005px] mx-auto px-6 md:px-0 pt-16 pb-24">
 
                 <div className="flex items-center justify-between mb-8">
