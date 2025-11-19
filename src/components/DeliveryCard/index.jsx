@@ -41,9 +41,8 @@ const DeliveryCard = ({ title, calories, description, image }) => {
             src={image}
             alt={`${title} - ${description}`}
             style={{
-              width: "100%",
-              height: "auto",
-              maxHeight: "276px",
+              width: "358px",
+              height: "254px",
               objectFit: "cover",
               borderRadius: "12px",
               display: "block",

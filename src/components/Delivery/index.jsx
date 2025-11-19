@@ -77,7 +77,6 @@ const Delivery = () => {
             window.open('https://www.foodora.se/en/restaurant/cph5/gandom','_blank')
      }
     />
-
     </div>
   </section>
   );
