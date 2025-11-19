@@ -54,10 +54,10 @@ function App() {
 
           {/* Other pages */}
           <Route path="/about-us" element={<AboutUsPage />} />
-          <Route path="/pay" element={<Pay />} />
+          <Route path="/pay" element={<PayPage />} />
           <Route path="/your-cart" element={<YourCart />} />
           <Route path="/events" element={<EventsPage />} />
-          <Route path="/pay" element={<PayPage />} />
+
         </Routes>
       </main>
 
