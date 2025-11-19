@@ -51,7 +51,7 @@ const SoupsPage = () => {
 
             {/* Rotated "Soups" text, responsive */}
             <span
-              className="absolute text-[#6A835D] font-santa"
+              className="absolute text-[#6A835D] font-santa font-normal"
               style={{
                 fontSize: "clamp(36px, 5vw, 94px)",
                 top: "80%",
