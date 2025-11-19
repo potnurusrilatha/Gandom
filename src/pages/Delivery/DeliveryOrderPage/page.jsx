@@ -92,7 +92,7 @@ const DeliveryOrderPage = () => {
       description="Refreshing Yogurt Soup"
       image={FoodoraAsheDoogh}
     />
-    <DeliveryCard
+    <DeliveryCarda
       title="Ashe Anar"
       calories="260–320 kcal"
       description="Pomegranate and Herb Pottage"

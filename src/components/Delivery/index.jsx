@@ -1,7 +1,7 @@
 import { useNavigate } from 'react-router-dom';
 import Gandom from "../../assets/Images/1.Home Page/Gandom.png"
 import FoodoraLogo from "../../assets/Images/1.Home Page/Foodora Logo.png"; 
-import Klarna from "../../assets/Images/1.Home Page/Klarna.png";
+
 
 const Delivery = () => {
   const navigate = useNavigate();
