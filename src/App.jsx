@@ -2,6 +2,7 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import HealthySection from "./components/HealthyDishes";
 import EventsSpecialpromotions from "./components/EventsSpecialpromotions";
+import GymHealthy from "./components/Gym/GymHealthy";
 import SoupsPage from "./pages/Dishes/SoupsPage/page.jsx";
 import DessertsPage from "./pages/Dishes/DessertsPage/page.jsx";
 import WafflesPage from "./pages/Dishes/WaffelsPage/page.jsx";
@@ -13,7 +14,7 @@ import AboutUsPage from "./pages/AboutUs/about-us"
 
 
 import { Routes, Route } from "react-router-dom";
-import GymHealthy from "./components/Gym/GymHealthy";
+
 
 function App() {
   return (
