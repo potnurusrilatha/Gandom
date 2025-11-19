@@ -1,148 +1,37 @@
-const WaffelsCard = ({ title, calories, description, image }) => {
+import NutritionTable from "../NutrionsTable";
+
+const WafflesCard = ({ title, price, description, image, nutrition }) => {
   return (
-    <div
-      style={{
-        width: "100%",
-        maxWidth: "1248px",
-        backgroundColor: "white",
-        display: "flex",
-        justifyContent: "flex-start",
-        flexWrap: "wrap",
-        gap: "16px",
-        margin: "0 auto",
-        padding: "16px",
-        boxSizing: "border-box",
-      }}
-    >
-      <div
-        style={{
-          borderRadius: "20px",
-          position: "relative",
-          overflow: "hidden",
-          padding: "16px",
-          flex: "1 1 100%",
-          maxWidth: "400px",
-          minWidth: "0",
-          boxSizing: "border-box",
-        }}
-      >
-        <div
-          style={{
-            borderRadius: "16px",
-            overflow: "hidden",
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-          }}
-        >
+    <div className="w-full bg-white rounded-2xl p-4 flex flex-col md:flex-row gap-6 shadow-md">
+      <div className="flex flex-col flex-shrink-0 md:w-[370px]">
+        <div className="rounded-xl overflow-hidden">
           <img
             src={image}
             alt={`${title} - ${description}`}
-            style={{
-              width: "100%",
-              height: "auto",
-              maxHeight: "276px",
-              objectFit: "cover",
-              borderRadius: "12px",
-              display: "block",
-            }}
+            className="w-[370px] h-[276px] object-cover rounded-xl"
           />
         </div>
-        <div
-          style={{
-            marginTop: "6px", 
-            display: "flex",
-            justifyContent: "center",
-          }}
-        >
-          <svg width="55" height="13" viewBox="0 0 55 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="6.5" cy="6.5" r="6.5" fill="#D9D9D9" />
-            <circle cx="27.5" cy="6.5" r="6.5" fill="#D9D9D9" />
-          </svg>
+
+        <div className="flex justify-center gap-2 mt-2">
+          <div className="w-[13px] h-[13px] rounded-full bg-gray-300" />
+          <div className="w-[13px] h-[13px] rounded-full bg-gray-300" />
         </div>
 
-        <div
-          style={{
-            marginTop: "8px", 
-            display: "flex",
-            justifyContent: "space-between",
-            alignItems: "center",
-          }}
-        >
-          <h3
-            style={{
-              fontFamily: "Inter, sans-serif",
-              fontWeight: 600,
-              fontSize: "1.25rem",
-              lineHeight: "130%",
-              color: "black",
-              margin: 0,
-              flex: 1,
-              wordBreak: "break-word",
-            }}
-          >
-            {title}
-          </h3>
-
-          <div
-            style={{
-              width: "40px",
-              height: "40px",
-              borderRadius: "50%",
-              border: "0.5px solid black",
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-              backgroundColor: "transparent",
-              flexShrink: 0,
-              marginLeft: "8px",
-            }}
-          >
-            <span
-              style={{
-                fontFamily: "Inter, sans-serif",
-                fontWeight: 200,
-                fontSize: "28px",
-                lineHeight: "130%",
-                color: "black",
-              }}
-            >
-              +
-            </span>
-          </div>
+        <div className="flex justify-between items-center">
+          <h3 className="text-black font-semibold text-lg">{title}</h3>
+          <button className="w-10 h-10 border border-black rounded-full flex items-center justify-center text-xl font-light">
+            +
+          </button>
         </div>
 
-       
-        <p
-          style={{
-            fontFamily: "Inter, sans-serif",
-            fontWeight: 600,
-            fontSize: "1.25rem",
-            lineHeight: "130%",
-            color: "#426B1F",
-            margin: "2px 0 0 0", 
-            wordBreak: "break-word",
-          }}
-        >
-          {calories}
-        </p>
-
-        <p
-          style={{
-            marginTop: "16px", 
-            fontFamily: "Inter, sans-serif",
-            fontWeight: 400,
-            fontSize: "1rem",
-            lineHeight: "150%",
-            color: "darkgray",
-            marginBottom: 0,
-          }}
-        >
-          {description}
-        </p>
+        <p className="text-[#426B1F] font-semibold text-lg">{price}</p>
+        <p className="text-gray-500 font-normal text-sm mt-4">{description}</p>
+      </div>
+      <div className="flex-1 min-w-[250px]">
+        <NutritionTable nutrition={nutrition} />
       </div>
     </div>
   );
 };
 
-export default WaffelsCard;
+export default WafflesCard;

@@ -15,7 +15,7 @@ export const soupsdata = [
       { nutrient: "Carbs", amount: "45–50 g", notes: "Slow-digesting carbs from legumes & noodles" },
       { nutrient: "Fiber", amount: "10–12 g", notes: "Very high in fiber great for digestion & feeling full" },
       { nutrient: "Sugars", amount: "4–6 g", notes: "Only natural sugars from legumes & yogurt (no added sugar)" },
-      { nutrient: "Sodium", amount: "250–3500 mg", notes: "Can be reduced by using less salt" },
+      { nutrient: "Sodium", amount: "250–350 mg", notes: "Can be reduced by using less salt" },
       { nutrient: "Micronutrients", amount: " ", notes: "Rich in folate, magnesium, potassium, iron, and antioxidants from herbs" },
     ],
   },
