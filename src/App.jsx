@@ -9,13 +9,14 @@ import Delivery from "./components/Delivery";
 import DeliveryOrderPage from "./pages/Delivery/DeliveryOrderPage/page.jsx";
 import CreateBoxMenuPage from "./pages/Delivery/CreateBoxMenu/page.jsx";
 import AboutUsPage from "./pages/AboutUs/about-us.jsx";
-import Pay from "./pages/Pay/pay";
+import Pay from "./pages/pay/Pay";
 
 import YourCart from "./pages/YourCart/YourCart";
 import HomeEvents from "./components/HomeEvents";
 import EventsPage from "./pages/EventsPage/page.jsx";
 import { Routes, Route } from "react-router-dom";
 import GymHealthy from "./components/Gym/GymHealthy";
+import Pay from "./pages/pay/Pay";
 
 
 function App() {
