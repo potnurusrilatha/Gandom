@@ -15,7 +15,7 @@ const DeliveryOrderPage = () => {
   useEffect(() => {
     if (healthyRef.current) {
       const letters = healthyRef.current.querySelectorAll("span");
-      if (letters[1] && letters[4]) {
+      if (letters[1]) {
         const rect = letters[1].getBoundingClientRect();
         const containerRect = healthyRef.current.getBoundingClientRect();
         setTOffset(rect.left - containerRect.left);
@@ -26,60 +26,53 @@ const DeliveryOrderPage = () => {
   return (
     <>
       {/* Hero Section */}
-      <section className="relative w-full flex flex-col md:flex-row items-center justify-center overflow-hidden pt-12 sm:pt-16 md:pt-0 min-h-[350px] sm:min-h-[400px] md:min-h-[calc(100vh-90px)]">
-        
-        {/* Text Column */}
-        <div className="relative flex flex-col justify-center items-center md:items-start w-full md:w-1/2 px-4 sm:px-8 md:px-16 lg:px-24">
-          
-          {/* Delivery Heading */}
-          <h1
-            ref={healthyRef}
-            className="text-primaryHover font-lexend font-bold text-center md:text-left"
-            style={{
-              fontSize: "clamp(40px, 6vw, 94px)",
-              lineHeight: "132%",
-              letterSpacing: "-0.02em",
-            }}
-          >
-            {"Delivery".split("").map((letter, idx) => (
-              <span key={idx}>{letter}</span>
-            ))}
-          </h1>
-          {/* Order Heading */}
-          <h2
-            className="font-santa absolute flex items-center justify-center"
-            style={{
-              color: "#EA3FB8",
-              fontWeight: 400,
-              fontStyle: "normal",
-              fontSize: "clamp(36px, 5vw, 94px)",
-              lineHeight: "132%",
-              letterSpacing: "-0.02em",
-              transform: `translateX(${tOffset}px) translateY(100%) rotate(3.62deg)`,
-              transformOrigin: "left center",
-              width: "clamp(200px, 25vw, 338px)",
-              height: "clamp(90px, 10vh, 124px)",
-              whiteSpace: "nowrap",
-              textAlign: "center",
-            }}
-          >
-            Order
-          </h2>
-        </div>
+<div className="w-full relative">
+  <section className="relative w-full min-h-[500px] md:min-h-[calc(100vh-90px)]">
+    {/* Hero Image */}
+    <img
+      src={CoverDelivery}
+      alt="Delivery hero cover"
+      className="absolute inset-0 w-full h-full object-cover"
+    />
 
-        {/* Image Column */}
-        <div className="relative flex items-center justify-center w-full md:w-1/2 h-[300px] sm:h-[400px] md:h-[calc(100vh-90px)] mt-8 md:mt-0">
-          <img
-            src={CoverDelivery}
-            alt="Healthy waffle cover image"
-            className="w-full h-full max-h-[500px] sm:max-h-[400px] md:max-h-[473px] object-contain"
-          />
-        </div>
-      </section>
+    {/* Left Gradient Overlay */}
+    <div className="absolute inset-y-0 left-0 w-[45%] bg-gradient-to-r from-[#F7F4EF] via-[#F7F4EF]/80 to-transparent pointer-events-none" />
 
-      {/*  Order Box Section */}
-      <section className="bg-grayLight px-4 sm:px-8 md:px-16 py-12">
-  <div className="w-full max-w-5xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+    {/* Text */}
+    <div className="absolute left-16 md:left-40 top-52 md:top-64">
+      <h1 className="leading-tight text-left">
+        <span
+          ref={healthyRef}
+          className="block text-primaryHover font-lexend font-bold text-4xl sm:text-5xl md:text-[94px] tracking-tight"
+        >
+          {"Delivery".split("").map((letter, idx) => (
+            <span key={idx}>{letter}</span>
+          ))}
+        </span>
+        <span
+          className="block font-santa text-pink-500 text-4xl sm:text-5xl md:text-[94px]"
+          style={{
+            transform: `translateX(${tOffset + 50}px) translateY(25px) rotate(-3.62deg)`,
+            transformOrigin: "left center",
+          }}
+        >
+          Order
+        </span>
+      </h1>
+    </div>
+  </section>
+</div>
+
+
+      {/* Delivery Cards Section */}
+<section className="bg-grayLight px-4 sm:px-8 md:px-16 py-12">
+  <div
+    className="w-full max-w-[1248px] mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3"
+    style={{
+      gap: "24px", // gap between cards
+      justifyContent: "center", // centers cards if there's extra space
+    }}
+  >
     <DeliveryCard
       title="Ashe Reshteh"
       calories="300–350 kcal"
@@ -92,7 +85,7 @@ const DeliveryOrderPage = () => {
       description="Refreshing Yogurt Soup"
       image={FoodoraAsheDoogh}
     />
-    <DeliveryCarda
+    <DeliveryCard
       title="Ashe Anar"
       calories="260–320 kcal"
       description="Pomegranate and Herb Pottage"
@@ -112,6 +105,7 @@ const DeliveryOrderPage = () => {
     />
   </div>
 </section>
+
     </>
   );
 };

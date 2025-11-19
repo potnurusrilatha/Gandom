@@ -20,7 +20,7 @@ function App() {
     <div className="flex flex-col min-h-screen w-full bg-grayLight">
       <Header />
 
-      <main className="flex-grow w-full max-w-[1440px] px-8 mx-auto">
+      <main className="flex-grow w-full max-w-[1440px] mx-auto">
         <Routes>
           {/* Home page */}
           <Route
