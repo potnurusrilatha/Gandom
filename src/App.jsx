@@ -13,6 +13,7 @@ import HomeEvents from "./components/HomeEvents";
 import EventsPage from "./pages/EventsPage/page.jsx";
 
 import { Routes, Route } from "react-router-dom";
+import GymHealthy from "./components/Gym/GymHealthy";
 
 function App() {
   return (
@@ -27,9 +28,9 @@ function App() {
             element={
               <>
                 <HealthySection />
-                <HomeEvents />
-
+                <EventsSpecialpromotions />
                 <Delivery />
+                <GymHealthy />
               </>
             }
           />
