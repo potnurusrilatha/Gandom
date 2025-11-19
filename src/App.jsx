@@ -1,7 +1,6 @@
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import HealthySection from "./components/HealthyDishes";
-import EventsSpecialpromotions from "./components/EventsSpecialpromotions";
 import SoupsPage from "./pages/Dishes/SoupsPage/page.jsx";
 import DessertsPage from "./pages/Dishes/DessertsPage/page.jsx"
 import WafflesPage from "./pages/Dishes/WafflesPage/page.jsx";
@@ -13,13 +12,14 @@ import AboutUsPage from "./pages/AboutUs/about-us.jsx";
 import Pay from "./pages/Pay/pay";
 
 import { Routes, Route } from "react-router-dom";
+import GymHealthy from "./components/Gym/GymHealthy";
 
 function App() {
   return (
     <div className="flex flex-col min-h-screen w-full bg-grayLight">
       <Header />
 
-      <main className="flex-grow w-full max-w-[1440px] px-8 mx-auto">
+      <main className="flex-grow w-full max-w-[1440px] mx-auto">
         <Routes>
           {/* Home page */}
           <Route
@@ -27,7 +27,8 @@ function App() {
             element={
               <>
                 <HealthySection />
-                <EventsSpecialpromotions />
+                <HomeEvents />
+                <GymHealthy />
                 <Delivery />
               </>
             }
@@ -37,13 +38,16 @@ function App() {
           <Route path="/dishes/soups" element={<SoupsPage />} />
           <Route path="/dishes/desserts" element={<DessertsPage />} />
           <Route path="/dishes/waffles" element={<WafflesPage />} />
-          <Route path="/dishes/sidedishes" element={<SidedishesPage />} /> {/* fixed */}
-
+          <Route path="/dishes/sidedishes" element={<SidedishesPage />} /> 
+         
           {/* Delivery pages */}
           <Route path="/delivery/order" element={<DeliveryOrderPage />} />
-          <Route path="/delivery/create-box-menu" element={<CreateBoxMenuPage />} />
+          <Route path="/delivery/createboxmenu" element={<CreateBoxMenuPage />} />
+
+          {/* Other pages */}
           <Route path="/about-us" element={<AboutUsPage />} />
           <Route path="/pay" element={<Pay />} />
+          <Route path="/events" element={<EventsPage />} />
         </Routes>
       </main>
 
