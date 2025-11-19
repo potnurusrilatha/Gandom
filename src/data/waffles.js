@@ -3,7 +3,7 @@ import WaffleVegetarianHerb from "../assets/Images/2.Dishes/Waffle - Vegetarian 
 import HerbalDelightWaffle from "../assets/Images/2.Dishes/Waffle - Herbal Delight.png";
 import MatchaWaffle from "../assets/Images/2.Dishes/Waffle - Matcha.png";
 import BeetrootWaffle from "../assets/Images/2.Dishes/Waffle - Beetroot.png";
-import CarrotWaffle from "../assets/Images/2.Dishes/Waffle - carrots.png";
+import CarrotWaffle from "../assets/Images/2.Dishes/Waffle - Carrots.png";
 
 export const wafflesData = [
   {
