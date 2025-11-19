@@ -45,7 +45,7 @@ function App() {
           <Route path="/dishes/soups" element={<SoupsPage />} />
           <Route path="/dishes/desserts" element={<DessertsPage />} />
           <Route path="/dishes/waffles" element={<WafflesPage />} />
-          <Route path="/dishes/sidedishes" element={<SidedishesPage />} />
+          <Route path="/dishes/sidedishes" element={<SidedishesPage />} /> {/* fixed */}
 
           {/* Delivery pages */}
           <Route path="/delivery/order" element={<DeliveryOrderPage />} />
@@ -56,6 +56,7 @@ function App() {
           <Route path="/pay" element={<Pay />} />
           <Route path="/your-cart" element={<YourCart />} />
           <Route path="/events" element={<EventsPage />} />
+          <Route path="/pay" element={<Pay />} />
         </Routes>
       </main>
 
