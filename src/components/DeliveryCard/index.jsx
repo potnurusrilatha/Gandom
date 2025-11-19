@@ -1,135 +1,138 @@
-const DeliveryCard = ({ title, calories, description, image }) => {
+import { useNavigate } from "react-router-dom";
+
+const DeliveryCard = ({ title, calories, description, image, onPlusClick }) => {
+  const navigate = useNavigate();
+
+  const handlePlusClick = () => {
+    if (onPlusClick) {
+      onPlusClick();
+    } else {
+      navigate("/delivery/createboxmenu");
+    }
+  };
+
   return (
     <div
       style={{
         width: "100%",
-        maxWidth: "1248px",
+        maxWidth: "395px", // max width for large screens
+        aspectRatio: "395 / 444", // keeps height proportional
         backgroundColor: "white",
-        border : "1px solid #E0E0E0",
+        border: "1px solid #E0E0E0",
         borderRadius: "20px",
         display: "flex",
+        flexDirection: "column",
         justifyContent: "flex-start",
-        flexWrap: "wrap",
-        gap: "16px",
-        margin: "0 auto",
+        gap: "12px",
         padding: "16px",
         boxSizing: "border-box",
       }}
     >
+      {/* Image */}
       <div
         style={{
-          borderRadius: "20px",
-          position: "relative",
+          borderRadius: "16px",
           overflow: "hidden",
-          padding: "16px",
-          flex: "1 1 100%",
-          maxWidth: "400px",
-          minWidth: "0",
-          boxSizing: "border-box",
+          flex: "0 0 auto",
+          aspectRatio: "1 / 0.7",
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
         }}
       >
-        <div
+        <img
+          src={image}
+          alt={`${title} - ${description}`}
           style={{
-            borderRadius: "16px",
-            overflow: "hidden",
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
+            width: "100%",
+            height: "100%",
+            objectFit: "cover",
+            borderRadius: "12px",
           }}
-        >
-          <img
-            src={image}
-            alt={`${title} - ${description}`}
-            style={{
-              width: "358px",
-              height: "254px",
-              objectFit: "cover",
-              borderRadius: "12px",
-              display: "block",
-            }}
-          />
-        </div>
+        />
+      </div>
 
-        <div
-          style={{
-            marginTop: "8px", 
-            display: "flex",
-            justifyContent: "space-between",
-            alignItems: "center",
-          }}
-        >
-          <h3
-            style={{
-              fontFamily: "Inter, sans-serif",
-              fontWeight: 600,
-              fontSize: "1.25rem",
-              lineHeight: "130%",
-              color: "black",
-              margin: 0,
-              flex: 1,
-              wordBreak: "break-word",
-            }}
-          >
-            {title}
-          </h3>
-
-          <div
-            style={{
-              width: "40px",
-              height: "40px",
-              borderRadius: "50%",
-              border: "0.5px solid black",
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-              backgroundColor: "transparent",
-              flexShrink: 0,
-              marginLeft: "8px",
-            }}
-          >
-            <span
-              style={{
-                fontFamily: "Inter, sans-serif",
-                fontWeight: 200,
-                fontSize: "28px",
-                lineHeight: "130%",
-                color: "black",
-              }}
-            >
-              +
-            </span>
-          </div>
-        </div>
-
-       
-        <p
+      {/* Title + Button */}
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "space-between",
+          alignItems: "center",
+        }}
+      >
+        <h3
           style={{
             fontFamily: "Inter, sans-serif",
             fontWeight: 600,
-            fontSize: "1.25rem",
+            fontSize: "clamp(1rem, 1.25vw, 1.25rem)", // responsive font
             lineHeight: "130%",
-            color: "#426B1F",
-            margin: "2px 0 0 0", 
+            color: "black",
+            margin: 0,
+            flex: 1,
             wordBreak: "break-word",
           }}
         >
-          {calories}
-        </p>
+          {title}
+        </h3>
 
-        <p
+        <div
+          onClick={handlePlusClick}
           style={{
-            marginTop: "16px", 
-            fontFamily: "Inter, sans-serif",
-            fontWeight: 400,
-            fontSize: "1rem",
-            lineHeight: "150%",
-            color: "darkgray",
-            marginBottom: 0,
+            width: "40px",
+            height: "40px",
+            borderRadius: "50%",
+            border: "0.5px solid black",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            cursor: "pointer",
+            userSelect: "none",
           }}
         >
-          {description}
-        </p>
+          <span
+            style={{
+              fontFamily: "Inter, sans-serif",
+              fontWeight: 200,
+              fontSize: "clamp(20px, 3vw, 28px)", // responsive plus
+              lineHeight: "130%",
+              color: "black",
+              marginTop: "-4px",
+            }}
+          >
+            +
+          </span>
+        </div>
       </div>
+
+      {/* Calories */}
+      <p
+        style={{
+          fontFamily: "Inter, sans-serif",
+          fontWeight: 600,
+          fontSize: "clamp(1rem, 1vw, 1.25rem)", // responsive font
+          lineHeight: "130%",
+          color: "#426B1F",
+          margin: "2px 0 0 0",
+          wordBreak: "break-word",
+        }}
+      >
+        {calories}
+      </p>
+
+      {/* Description */}
+      <p
+        style={{
+          fontFamily: "Inter, sans-serif",
+          fontWeight: 400,
+          fontSize: "clamp(0.875rem, 0.9vw, 1rem)", // responsive font
+          lineHeight: "150%",
+          color: "darkgray",
+          marginTop: "2px",
+          marginBottom: 0,
+        }}
+      >
+        {description}
+      </p>
     </div>
   );
 };
