@@ -1,13 +1,13 @@
-import AsheReshteh from "../assets/Images/2.Dishes/Ashe Reshteh.png";
-import AsheDoogh from "../assets/Images/2.Dishes/Ashe Doogh.png";
-import AsheAnar from "../assets/Images/2.Dishes/Ashe Anar.png";
+import AsheReshtehSoup from "../assets/Images/2.Dishes/Ashe Reshteh.png";
+import AsheDooghSoup from "../assets/Images/2.Dishes/Ashe Doogh.png";
+import AsheAnarSoup from "../assets/Images/2.Dishes/Ashe Anar.png";
 
 export const soupsdata = [
   {
     title: "Ashe Reshteh",
     calories: "62.50 SEK",
     description: "Noodle, Herb and Bean Pottage",
-    image: AsheReshteh,
+    image: AsheReshtehSoup,
     nutrition: [
       { nutrient: "Calories", amount: "300–350 kcal", notes: "Filling but not as heavy as soups/stews" },
       { nutrient: "Protein", amount: "15–18 g", notes: "From chickpeas, beans, lentils, and yogurt" },
@@ -23,7 +23,7 @@ export const soupsdata = [
     title: "Ashe Doogh",
     calories: "62.50 SEK",
     description: "Yogurt and herb soup",
-    image: AsheDoogh,
+    image: AsheDooghSoup,
     nutrition: [
       { nutrient: "Calories", amount: "250–300 kcal", notes: "Light yet nourishing; ideal as a balanced meal or snack" },
       { nutrient: "Protein", amount: "12–15 g", notes: "From yogurt, chickpeas, and lentils — supports muscle recovery" },
@@ -39,7 +39,7 @@ export const soupsdata = [
     title: "Ashe Anar",
     calories: "62.50 SEK",
     description: "Pomegranate-flavored soup",
-    image: AsheAnar,
+    image: AsheAnarSoup,
     nutrition: [
       { nutrient: "Calories", amount: "260–320 kcal", notes: "Light yet satisfying; naturally rich in flavor without heaviness" },
       { nutrient: "Protein", amount: "10–14 g", notes: "From lentils and legumes; supports recovery and sustained energy" },
