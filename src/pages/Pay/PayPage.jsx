@@ -1,7 +1,7 @@
 import React from "react";
 import Coverimage from "../../assets/Images/5.Delivery/_Cover Delivery.png";
 
-const Pay = () => {
+const PayPage = () => {
     return (
         <div className="w-full min-h-screen bg-[#F7F3EB]">
             {/* ---------- COVER ---------- */}
@@ -156,4 +156,4 @@ const Pay = () => {
     );
 };
 
-export default Pay;
+export default PayPage;
