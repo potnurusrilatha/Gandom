@@ -17,7 +17,7 @@ import GymHealthy from "./components/Gym/GymHealthy";
 
 function App() {
   return (
-    <div className="flex flex-col min-h-screen w-full bg-grayLight">
+    <div className="flex flex-col min-h-screen w-full bg-beigebg">
       <Header />
 
       <main className="flex-grow w-full max-w-[1440px] mx-auto">
