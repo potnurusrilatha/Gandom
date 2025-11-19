@@ -3,9 +3,12 @@ import Navbar from "../Navbar";
 
 const Header = () => {
   return (
-    <header className="w-full h-[80px] sm:h-[100px] md:h-[112px] lg:h-[128px] xl:h-[144px] bg-white flex items-center px-8">
+    <header className="w-full bg-beigebg flex items-center px-4 sm:px-8 md:px-16 py-2 md:py-4">
       <div className="w-full max-w-[2560px] mx-auto flex items-center justify-between">
+        {/* Logo */}
         <LogoGandom />
+
+        {/* Navbar */}
         <Navbar />
       </div>
     </header>
