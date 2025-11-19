@@ -69,8 +69,8 @@ const DeliveryOrderPage = () => {
   <div
     className="w-full max-w-[1248px] mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3"
     style={{
-      gap: "24px", // gap between cards
-      justifyContent: "center", // centers cards if there's extra space
+      gap: "24px", 
+      justifyContent: "center", 
     }}
   >
     <DeliveryCard

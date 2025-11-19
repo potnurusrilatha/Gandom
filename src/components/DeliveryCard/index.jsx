@@ -15,8 +15,8 @@ const DeliveryCard = ({ title, calories, description, image, onPlusClick }) => {
     <div
       style={{
         width: "100%",
-        maxWidth: "395px", // max width for large screens
-        aspectRatio: "395 / 444", // keeps height proportional
+        maxWidth: "395px", 
+        aspectRatio: "395 / 444", 
         backgroundColor: "white",
         border: "1px solid #E0E0E0",
         borderRadius: "20px",
@@ -64,7 +64,7 @@ const DeliveryCard = ({ title, calories, description, image, onPlusClick }) => {
           style={{
             fontFamily: "Inter, sans-serif",
             fontWeight: 600,
-            fontSize: "clamp(1rem, 1.25vw, 1.25rem)", // responsive font
+            fontSize: "clamp(1rem, 1.25vw, 1.25rem)", 
             lineHeight: "130%",
             color: "black",
             margin: 0,
@@ -93,7 +93,7 @@ const DeliveryCard = ({ title, calories, description, image, onPlusClick }) => {
             style={{
               fontFamily: "Inter, sans-serif",
               fontWeight: 200,
-              fontSize: "clamp(20px, 3vw, 28px)", // responsive plus
+              fontSize: "clamp(20px, 3vw, 28px)", 
               lineHeight: "130%",
               color: "black",
               marginTop: "-4px",
@@ -109,7 +109,7 @@ const DeliveryCard = ({ title, calories, description, image, onPlusClick }) => {
         style={{
           fontFamily: "Inter, sans-serif",
           fontWeight: 600,
-          fontSize: "clamp(1rem, 1vw, 1.25rem)", // responsive font
+          fontSize: "clamp(1rem, 1vw, 1.25rem)", 
           lineHeight: "130%",
           color: "#426B1F",
           margin: "2px 0 0 0",
@@ -124,7 +124,7 @@ const DeliveryCard = ({ title, calories, description, image, onPlusClick }) => {
         style={{
           fontFamily: "Inter, sans-serif",
           fontWeight: 400,
-          fontSize: "clamp(0.875rem, 0.9vw, 1rem)", // responsive font
+          fontSize: "clamp(0.875rem, 0.9vw, 1rem)", 
           lineHeight: "150%",
           color: "darkgray",
           marginTop: "2px",
