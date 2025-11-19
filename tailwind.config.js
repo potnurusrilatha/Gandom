@@ -16,7 +16,7 @@ export default {
         primary: "#E6B220",        
         primaryHover: "#DEA401",   
         secondary: "#6A8358",      
-        secondaryLight: "#426B1F", 
+        green: "#426B1F", 
 
         // Accent colors
         accentYellow: "#FFC943",
@@ -32,6 +32,7 @@ export default {
         grayMedium: "#D9D9D9",
         grayDark: "#1E1E1E",
         grayBorder: "#E6E6E6",
+        beigebg: "#F7F3EB", 
 
         // Button colors
         buttonBg: "#E8A302",
