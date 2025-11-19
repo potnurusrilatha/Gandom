@@ -6,6 +6,9 @@ import Klarna from "../../assets/Images/1.Home Page/Klarna.png";
 const Delivery = () => {
   const navigate = useNavigate();
 
+  const foodoraInstagramLink =
+    "https://l.instagram.com/?u=https%3A%2F%2Fwww.foodora.se%2Fen%2Frestaurant%2Fcph5%2Fgandom%3Futm_source%3Dig%26utm_medium%3Dsocial%26utm_content%3Dlink_in_bio";
+
   return (
     <section className="w-full py-20 flex flex-col items-center px-4">
 
@@ -23,10 +26,8 @@ const Delivery = () => {
 
       {/* Paragraph */}
       <div className="
-        w-full 
-        max-w-[815px] 
-        h-auto 
-        min-h-[80px] md:min-h-[100px] lg:h-[120px]
+        w-full max-w-[815px] 
+        h-auto min-h-[80px] md:min-h-[100px] lg:h-[120px]
         flex items-center justify-center 
         mb-12 px-2
       ">
@@ -72,26 +73,13 @@ const Delivery = () => {
             lg:w-[243px] lg:h-[243px]
             object-cover shadow-md
           "
-          onClick={() => navigate('/delivery/create-box-menu')}
-        />
+          onClick={() =>
+            window.open('https://www.foodora.se/en/restaurant/cph5/gandom','_blank')
+     }
+    />
 
-        <img
-          src={Klarna}
-          alt="Klarna Logo"
-          className="
-            rounded-[20px]
-            w-[200px] h-[200px]
-            sm:w-[220px] sm:h-[220px]
-            md:w-[230px] md:h-[230px]
-            lg:w-[243px] lg:h-[243px]
-            object-cover shadow-md
-          "
-        />
-
-      </div>
-
-    </section>
+    </div>
+  </section>
   );
 };
-
 export default Delivery;
