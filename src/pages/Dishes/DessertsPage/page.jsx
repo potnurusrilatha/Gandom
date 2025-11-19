@@ -2,52 +2,44 @@ import CoverDessert from "../../../assets/Images/2.Dishes/_Cover Dessert.png";
 import DessertCard from "../../../components/DessertCard";
 import desserts from "../../../data/dessertsdata.js";
 
-
 const DessertsPage = () => {
   return (
     <>
-    <section
-      className="relative w-full min-h-[calc(100vh-112px)] flex flex-col md:flex-row items-center justify-center overflow-hidden -mt-[112px]"
-    >
-      <div className="flex flex-col justify-center items-start w-full md:w-1/2 px-4 sm:px-8 md:px-16 lg:px-24 h-full">
-        <div className="w-full">
-          <h1
-            className="text-primaryHover font-lexend font-bold leading-tight tracking-tight text-center md:text-center"
-            style={{
-              fontSize: "clamp(40px, 6vw, 94px)", 
-              lineHeight: "132%",
-              letterSpacing: "-0.02em",
-            }}
-          >
-            <span className="block">Healthy</span>
-            <span className="block">HomeBaked</span>
-          </h1>
+      {/* Hero Section */}
+      <section className="relative w-full min-h-[500px] md:min-h-[calc(100vh-90px)] flex items-center overflow-hidden">
+        {/* Background Image */}
+        <img
+          src={CoverDessert}
+          alt="Desserts hero cover"
+          className="absolute inset-0 w-full h-full object-cover"
+        />
 
-          {/* Desserts */}
+        {/* Left Gradient Overlay */}
+        <div className="absolute inset-y-0 left-0 w-[45%] bg-gradient-to-r from-[#F7F4EF] via-[#F7F4EF]/80 to-transparent pointer-events-none" />
+
+        {/* Text */}
+        <div className="absolute left-8 sm:left-16 md:left-40 top-32 sm:top-40 md:top-64">
+          <h1 className="leading-tight text-left">
+            <span className="block text-primaryHover text-center font-roboto font-bold text-4xl sm:text-5xl md:text-[94px] tracking-tight">
+              Healthy
+            </span>
+            <span className="block text-primaryHover font-lexend font-bold text-4xl sm:text-5xl md:text-[94px] tracking-tight">
+              HomeBaked
+            </span>
+          </h1>
           <h2
-            className="text-warning font-santa mt-4 text-center md:text-center"
-            style={{
-              fontSize: "clamp(36px, 5vw, 94px)", 
-              transform: "rotate(3.62deg)",
-            }}
+            className="block font-santa text-warning text-4xl text-center sm:text-5xl md:text-[94px] mt-4"
+            style={{ transform: "rotate(-3.62deg)" }}
           >
             Desserts
           </h2>
         </div>
-      </div>
+      </section>
 
-      <div className="relative flex items-center justify-center w-full md:w-1/2 h-full">
-        <img
-          src={CoverDessert}
-          alt="Desserts Cover"
-          className="object-contain w-[80%] sm:w-[70%] md:w-[90%] lg:w-[1003px] h-auto max-h-[473px]"
-        />
-      </div>
-    </section>
-  {/* Dessert Cards */}
+      {/* Dessert Cards */}
       <section className="flex flex-col items-center px-4 sm:px-8 md:px-16 py-12 gap-6 mb-8">
         {desserts.map((item, idx) => (
-          <DessertCard 
+          <DessertCard
             key={idx}
             title={item.title}
             price={item.price}
