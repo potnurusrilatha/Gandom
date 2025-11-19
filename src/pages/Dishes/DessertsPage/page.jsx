@@ -3,10 +3,6 @@ import DessertCard from "../../../components/DessertCard";
 import desserts from "../../../data/dessertsdata.js";
 
 
-import CoverDessert from "../../../assets/Images/2.Dishes/_Cover Dessert.png";
-import DessertCard from "../../../components/DessertCard";
-import desserts from "../../../data/dessertsdata.js";
-
 
 const DessertsPage = () => {
   return (
