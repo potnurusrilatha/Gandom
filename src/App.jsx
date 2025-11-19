@@ -28,6 +28,9 @@ function App() {
             element={
               <>
                 <HealthySection />
+                <HomeEvents />
+
+                <Delivery />
                 <EventsSpecialpromotions />
                 <Delivery />
                 <GymHealthy />
@@ -39,7 +42,7 @@ function App() {
           <Route path="/dishes/soups" element={<SoupsPage />} />
           <Route path="/dishes/desserts" element={<DessertsPage />} />
           <Route path="/dishes/waffles" element={<WafflesPage />} />
-          <Route path="/dishes/sidedishes" element={<SidedishesPage />} /> {/* fixed */}
+          <Route path="/dishes/sidedishes" element={<SidedishesPage />} />
           
           {/* Delivery pages */}
           <Route path="/delivery/order" element={<DeliveryOrderPage />} />
