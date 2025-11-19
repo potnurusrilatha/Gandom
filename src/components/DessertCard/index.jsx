@@ -1,160 +1,36 @@
-const DessertCard = ({ title, calories, description, image }) => {
+import NutritionTable from "../NutritionTable";
+
+const DessertCard = ({ title, price, description, image, nutrition }) => {
   return (
-    <div
-      style={{
-        width: "100%",           
-        maxWidth: "1248px",      
-        minHeight: "470px",
-        backgroundColor: "white",
-        display: "flex",
-        justifyContent: "flex-start",
-        alignItems: "flex-start",
-        border: "2px solid grayBorder",
-        borderRadius: "20px",
-        boxSizing: "border-box",
-        margin: "0 auto",
-        padding: "2%",
-        flexWrap: "wrap",        
-      }}
-    >
-     
-      <div
-        style={{
-          borderRadius: "20px",
-          position: "relative",
-          boxSizing: "border-box",
-          overflow: "hidden",
-          padding: "2%",
-          flex: "1 1 380px",      
-          maxWidth: "400px",      
-          minWidth: "300px",      
-        }}
-      >
-       
-        <div
-          style={{
-            borderRadius: "16px",
-            padding: "2%",
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-          }}
-        >
+    <div className="w-full bg-white rounded-2xl p-4 flex flex-col md:flex-row gap-6 shadow-md">
+      <div className="flex flex-col flex-shrink-0 md:w-[370px]">
+        <div className="rounded-xl overflow-hidden">
           <img
             src={image}
             alt={`${title} - ${description}`}
-            style={{
-              width: "100%",
-              maxWidth: "374px",
-              height: "auto",
-              maxHeight: "276px",
-              objectFit: "cover",
-              borderRadius: "12px",
-              display: "block",
-            }}
+            className="w-[370px] h-[276px] object-cover rounded-xl"
           />
         </div>
 
-     
-        <div
-          style={{
-            position: "relative",
-            marginTop: "2%",
-            display: "flex",
-            justifyContent: "center",
-          }}
-        >
-          <svg
-            width="55"
-            height="13"
-            viewBox="0 0 55 13"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <circle cx="6.5" cy="6.5" r="6.5" fill="#D9D9D9" />
-            <circle cx="27.5" cy="6.5" r="6.5" fill="#D9D9D9" />
-            <circle cx="48.5" cy="6.5" r="6.5" fill="#D9D9D9" />
-          </svg>
+        <div className="flex justify-center gap-2 mt-2">
+          <div className="w-[13px] h-[13px] rounded-full bg-gray-300"></div>
+          <div className="w-[13px] h-[13px] rounded-full bg-gray-300"></div>
+          <div className="w-[13px] h-[13px] rounded-full bg-gray-300"></div>
         </div>
 
-      
-        <h3
-          style={{
-            marginTop: "2%",
-            marginLeft: "4%",
-            fontFamily: "Inter, sans-serif",
-            fontWeight: 600,
-            fontSize: "1.25rem",   
-            lineHeight: "130%",
-            color: "black",
-            whiteSpace: "nowrap",
-          }}
-        >
-          {title}
-        </h3>
-
-      
-        <p
-          style={{
-            marginTop: "1%",
-            marginLeft: "4%",
-            fontFamily: "Inter, sans-serif",
-            fontWeight: 600,
-            fontSize: "1.25rem",
-            lineHeight: "130%",
-            color: "#426B1F",
-            whiteSpace: "nowrap",
-          }}
-        >
-          {calories}
-        </p>
-
-       
-        <p
-          style={{
-            marginTop: "1%",
-            marginLeft: "4%",
-            fontFamily: "Inter, sans-serif",
-            fontWeight: 400,
-            fontSize: "1rem",
-            lineHeight: "150%",
-            color: "darkGray",
-            whiteSpace: "nowrap",
-            gap: "2px",         
-           }}
-        >
-          {description}
-        </p>
-
-       
-        <div
-          style={{
-            position: "absolute",
-            top: "70%",              
-            right: "5%",
-            width: "62px",          
-            height: "62px",        
-            borderRadius: "50%",
-            border: "2px dotted rgba(0,0,0,0.4)",
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
-            backgroundColor: "transparent",
-           
-          }}
-        >
-          <span
-            style={{
-              fontFamily: "Inter, sans-serif",
-              fontWeight: 200,
-              fontSize: "3rem",
-              lineHeight: "130%",
-              color: "rgba(0,0,0,0.5)",
-            }}
-          >
+        <div className="flex justify-between items-center">
+          <h3 className="text-black font-semibold text-lg">{title}</h3>
+          <button className="w-10 h-10 border border-black rounded-full flex items-center justify-center text-xl font-light">
             +
-          </span>
+          </button>
         </div>
+
+        <p className="text-[#426B1F] font-semibold text-lg">{price}</p>
+        <p className="text-gray-500 font-normal text-sm mt-2">{description}</p>
+      </div>
+
+      <div className="flex-1 min-w-[250px] mt-10 md:mt-0">
+        <NutritionTable nutrition={nutrition} />
       </div>
     </div>
   );
