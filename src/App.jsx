@@ -11,17 +11,23 @@ import CreateBoxMenuPage from "./pages/Delivery/CreateBoxMenu/page.jsx";
 import AboutUsPage from "./pages/AboutUs/about-us.jsx";
 import Pay from "./pages/Pay/pay";
 
+import YourCart from "./pages/YourCart/YourCart";
+import HomeEvents from "./components/HomeEvents";
+import EventsPage from "./pages/EventsPage/page.jsx";
 import { Routes, Route } from "react-router-dom";
 import GymHealthy from "./components/Gym/GymHealthy";
 
+
 function App() {
   return (
-    <div className="flex flex-col min-h-screen w-full bg-grayLight">
+    <div className="flex flex-col min-h-screen w-full bg-beigebg">
       <Header />
 
       <main className="flex-grow w-full max-w-[1440px] mx-auto">
         <Routes>
+
           {/* Home page */}
+
           <Route
             path="/"
             element={
@@ -33,6 +39,7 @@ function App() {
               </>
             }
           />
+
 
           {/* Dishes pages */}
           <Route path="/dishes/soups" element={<SoupsPage />} />
@@ -47,6 +54,7 @@ function App() {
           {/* Other pages */}
           <Route path="/about-us" element={<AboutUsPage />} />
           <Route path="/pay" element={<Pay />} />
+          <Route path="/your-cart" element={<YourCart />} />
           <Route path="/events" element={<EventsPage />} />
         </Routes>
       </main>

@@ -21,7 +21,7 @@ const HealthySection = () => {
             <img
               src={item.img}
               alt={item.name}
-              className="w-[220px] h-[220px] md:w-[260px] md:h-[260px] lg:w-[288px] lg:h-[288px] object-cover rounded-[20px] shadow-md"
+              className="w-[220px] h-[220px] md:w-[260px] md:h-[260px] lg:w-[288px] lg:h-[288px] object-cover rounded-[20px]"
             />
 
            
@@ -33,7 +33,7 @@ const HealthySection = () => {
 
             
               {item.subName && (
-                <p className="text-white font-inter font-bold text-[16px] md:text-[18px] lg:text-[20px] whitespace-nowrap max-w-max">
+                <p className="text-white font-inter font-bold text-[16px] md:text-[18px] lg:text-[24px] whitespace-nowrap max-w-max">
                   {item.subName}
                 </p>
               )}
