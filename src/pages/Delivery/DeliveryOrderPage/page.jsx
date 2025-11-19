@@ -5,12 +5,17 @@ import FoodoraAsheDoogh from "../../../assets/Images/5.Delivery/Foodora - Ashe D
 import FoodoraAsheAnar from "../../../assets/Images/5.Delivery/Foodora - Ashe Anar.png";
 import FoodoraSholeZard from "../../../assets/Images/5.Delivery/Foodora - Shole Zard.png";
 import MenuGandom from "../../../assets/Images/5.Delivery/Menu Gandom.png";
+import { useNavigate } from "react-router-dom";
 
 import { useRef, useEffect, useState } from "react";
 
 const DeliveryOrderPage = () => {
+  const navigate = useNavigate();
   const healthyRef = useRef(null);
   const [tOffset, setTOffset] = useState(0);
+
+  // Track if Menu Gandom is active
+  const [activeMenu, setActiveMenu] = useState(false);
 
   useEffect(() => {
     if (healthyRef.current) {
@@ -22,6 +27,8 @@ const DeliveryOrderPage = () => {
       }
     }
   }, []);
+
+  
 
   return (
     <>
@@ -78,30 +85,39 @@ const DeliveryOrderPage = () => {
       calories="300–350 kcal"
       description="Noodle, Herb and Bean Pottage"
       image={FoodoraAsheReshteh}
+      onPlusClick={() => setActiveMenu(true)}
     />
     <DeliveryCard
       title="Ashe Doogh"
       calories="250–300 kcal"
       description="Refreshing Yogurt Soup"
       image={FoodoraAsheDoogh}
+      onPlusClick={() => setActiveMenu(true)}
     />
     <DeliveryCard
       title="Ashe Anar"
       calories="260–320 kcal"
       description="Pomegranate and Herb Pottage"
       image={FoodoraAsheAnar}
+      onPlusClick={() => setActiveMenu(true)}
     />
     <DeliveryCard
       title="Shole Zard"
       calories="180–230 kcal"
       description="Saffron Rice Pudding"
       image={FoodoraSholeZard}
+      onPlusClick={() => setActiveMenu(true)}
     />
     <DeliveryCard
       title="Menu Your Own Box"
       calories="it's your dish"
       description="9 different dishes"
       image={MenuGandom}
+       onPlusClick={() => navigate("/delivery/createboxmenu")}
+           
+            style={{
+              border: activeMenu ? "2px solid #EA3FB8" : "1px solid #E0E0E0",
+            }}
     />
   </div>
 </section>
