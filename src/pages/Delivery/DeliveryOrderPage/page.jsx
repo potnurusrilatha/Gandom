@@ -14,7 +14,7 @@ const DeliveryOrderPage = () => {
   const healthyRef = useRef(null);
   const [tOffset, setTOffset] = useState(0);
 
-  // Track if Menu Gandom is active
+ 
   const [activeMenu, setActiveMenu] = useState(false);
 
   useEffect(() => {
@@ -70,8 +70,7 @@ const DeliveryOrderPage = () => {
   </section>
 </div>
 
-
-      {/* Delivery Cards Section */}
+{/* Delivery Cards Section */}
 <section className="bg-grayLight px-4 sm:px-8 md:px-16 py-12">
   <div
     className="w-full max-w-[1248px] mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3"
@@ -114,8 +113,7 @@ const DeliveryOrderPage = () => {
       description="9 different dishes"
       image={MenuGandom}
        onPlusClick={() => navigate("/delivery/createboxmenu")}
-           
-            style={{
+           style={{
               border: activeMenu ? "2px solid #EA3FB8" : "1px solid #E0E0E0",
             }}
     />
