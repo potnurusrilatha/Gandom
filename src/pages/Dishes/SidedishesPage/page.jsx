@@ -1,5 +1,5 @@
 import CoverDishes from "../../../assets/Images/2.Dishes/_Cover Side Dishes.png";
-import { sidedishesData } from "../../../data/sidedishesData";
+import { sidedishesData } from "../../../data/sidedishesdata";
 import SideDishCard from "../../../components/SideDishCard";
 
 const SidedishesPage = () => {
