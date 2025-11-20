@@ -1,14 +1,14 @@
+import logo from "../../assets/Logo Gandom/Logo White.png";
+import background from "../../assets/Images/6.Footer/Slide9.png";
+
+import Instagram1 from "../../assets/Images/6.Footer/ShareAshe.png";
+import Instagram2 from "../../assets/Images/6.Footer/Waffles.png";
+import Instagram3 from "../../assets/Images/6.Footer/MenuGandom.png";
+import Instagram4 from "../../assets/Images/6.Footer/Travel.png";
+
+const instagramImages = [Instagram1, Instagram2, Instagram3, Instagram4];
+
 const Footer = () => {
-  const logo = new URL("../../assets/Logo Gandom/Logo White.png", import.meta.url).href;
-  const background = new URL("../../assets/Images/6.Footer/Slide9.png", import.meta.url).href;
-
-  const instagramImages = [
-    "../../assets/Images/6.Footer/ShareAshe.png",
-    "../../assets/Images/6.Footer/Waffles.png",
-    "../../assets/Images/6.Footer/MenuGandom.png",
-    "../../assets/Images/6.Footer/Travel.png",
-  ].map((path) => new URL(path, import.meta.url).href);
-
   return (
     <footer
       className="relative w-full bg-cover bg-center bg-no-repeat text-grayLight py-12 md:py-16"
