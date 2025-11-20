@@ -1,6 +1,7 @@
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import HealthySection from "./components/HealthyDishes";
+import Hero from "./components/Hero/Hero";
 import SoupsPage from "./pages/Dishes/SoupsPage/page.jsx";
 import DessertsPage from "./pages/Dishes/DessertsPage/page.jsx"
 import WafflesPage from "./pages/Dishes/WafflesPage/page.jsx";
@@ -23,7 +24,7 @@ function App() {
   return (
     <div className="flex flex-col min-h-screen w-full bg-beigebg">
       <Header />
-
+      <Hero />
       <main className="flex-grow w-full max-w-[1440px] mx-auto">
         <Routes>
 
@@ -46,7 +47,7 @@ function App() {
           <Route path="/dishes/soups" element={<SoupsPage />} />
           <Route path="/dishes/desserts" element={<DessertsPage />} />
           <Route path="/dishes/waffles" element={<WafflesPage />} />
-          <Route path="/dishes/sidedishes" element={<SidedishesPage />} /> {/* fixed */}
+          <Route path="/dishes/sidedishes" element={<SidedishesPage />} />
 
           {/* Delivery pages */}
           <Route path="/delivery/order" element={<DeliveryOrderPage />} />
@@ -63,6 +64,7 @@ function App() {
 
       <Footer />
     </div>
+
   );
 }
 
