@@ -2,8 +2,6 @@ import CoverDessert from "../../../assets/Images/2.Dishes/_Cover Dessert.png";
 import DessertCard from "../../../components/DessertCard";
 import desserts from "../../../data/dessertsdata.js";
 
-
-
 const DessertsPage = () => {
   return (
     <>
@@ -15,16 +13,13 @@ const DessertsPage = () => {
           alt="Desserts hero cover"
           className="absolute inset-0 w-full h-full object-cover"
         />
-
+        <div className="absolute inset-y-0 left-0 w-[45%] bg-gradient-to-r from-[#F7F4EF] via-[#F7F4EF]/80 to-transparent pointer-events-none" />
 
         {/* Left Gradient Overlay */}
         <div className="absolute inset-y-0 left-0 w-[45%] bg-gradient-to-r from-[#F7F4EF] via-[#F7F4EF]/80 to-transparent pointer-events-none" />
 
-
-
         {/* Left Gradient Overlay */}
         <div className="absolute inset-y-0 left-0 w-[45%] bg-gradient-to-r from-[#F7F4EF] via-[#F7F4EF]/80 to-transparent pointer-events-none" />
-
 
         {/* Text */}
         <div className="absolute left-8 sm:left-16 md:left-40 top-32 sm:top-40 md:top-64">
