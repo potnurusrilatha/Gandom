@@ -3,7 +3,8 @@ import Footer from "./components/Footer";
 import HealthySection from "./components/HealthyDishes";
 import AboutUsSection from "./components/AboutUs/AboutUs";
 import EventsSpecialpromotions from "./components/EventsSpecialpromotions";
-import GymHealthy from "./components/Gym/GymHealthy";
+import GymPage from "./pages/Dishes/GymPage/page.jsx";
+import GymHealthy from "./components/Gym/GymHealthy.jsx";
 import Hero from "./components/Hero/Hero";
 import SoupsPage from "./pages/Dishes/SoupsPage/page.jsx";
 import DessertsPage from "./pages/Dishes/DessertsPage/page.jsx"
@@ -60,7 +61,8 @@ function App() {
           <Route path="/pay" element={<PayPage />} />
           <Route path="/your-cart" element={<YourCart />} />
           <Route path="/events" element={<EventsPage />} />
-          <Route path="/gym" element={<GymHealthy />} />
+          <Route path="/gym" element={<GymPage />} />
+          
 
         </Routes>
       </main>
