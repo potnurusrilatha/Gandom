@@ -1,38 +1,39 @@
 import { useState } from "react";
 import { TiShoppingCart } from "react-icons/ti";
 import { RxHamburgerMenu } from "react-icons/rx";
+import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const [activeLink, setActiveLink] = useState(""); 
 
   const links = [
     { label: "Home", href: "/" },
-    { label: "Dishes", href: "/dishes" },
+    { label: "Dishes", href: "/dishes/soups" },
     { label: "About Us", href: "/about-us" },
     { label: "Events", href: "/events" },
     { label: "Delivery", href: "/delivery/order" },
   ];
 
+  const linkClasses = ({ isActive }) =>
+    `font-inter text-[16px] ${isActive ? "text-primary font-bold" : "text-black hover:text-black hover:font-bold"}`;
+
+  const mobileLinkClasses = ({ isActive }) =>
+    `font-inter text-[18px] w-full text-center py-2 rounded ${
+      isActive
+        ? "text-primary font-bold bg-primary"
+        : "text-black hover:text-primary "
+    }`;
+
   return (
     <div className="flex items-center justify-end gap-6 relative">
-      {/* Desktop Navbar*/}
+      {/* Desktop Navbar */}
       <div className="hidden lg:flex items-center gap-8">
         {links.map((link) => (
-          <a
-            key={link.href}
-            href={link.href}
-            className={`font-inter text-[16px] transition-all ${
-              activeLink === link.label
-                ? "text-primary font-bold"
-                : "text-black hover:text-primary hover:font-bold"
-            }`}
-            onClick={() => setActiveLink(link.label)}
-          >
+          <NavLink key={link.href} to={link.href} className={linkClasses}>
             {link.label}
-          </a>
+          </NavLink>
         ))}
-        <button className="p-2 rounded hover:text-primary transition-all">
+        <button className="p-2 rounded hover:text-primary">
           <TiShoppingCart className="w-[27px] h-[24px]" />
         </button>
       </div>
@@ -42,7 +43,6 @@ const Navbar = () => {
         <button className="p-2 rounded hover:text-primary">
           <TiShoppingCart className="w-[27px] h-[24px]" />
         </button>
-
         <button
           className="p-2 rounded hover:text-primary"
           onClick={() => setMobileMenuOpen(!isMobileMenuOpen)}
@@ -53,24 +53,16 @@ const Navbar = () => {
 
       {/* Mobile & Tablet Menu */}
       {isMobileMenuOpen && (
-        <div className="absolute top-full right-0 w-56 bg-white shadow-md flex flex-col items-center py-4 gap-4 lg:hidden z-50">
+        <div className="absolute top-full right-0 w-56 bg-grayLight shadow-md flex flex-col items-center py-4 gap-4 lg:hidden z-50">
           {links.map((link) => (
-            <a
+            <NavLink
               key={link.href}
-              href={link.href}
-              onClick={() => {
-                setActiveLink(link.label);
-                setMobileMenuOpen(false);
-              }}
-              className={`font-inter text-[18px] w-full text-center py-2 rounded
-                ${
-                  activeLink === link.label
-                    ? "text-primary font-bold bg-red-100" 
-                    : "text-black hover:text-primary hover:font-bold hover:bg-gray-900"
-                }`}
+              to={link.href}
+              onClick={() => setMobileMenuOpen(false)}
+              className={mobileLinkClasses}
             >
               {link.label}
-            </a>
+            </NavLink>
           ))}
         </div>
       )}

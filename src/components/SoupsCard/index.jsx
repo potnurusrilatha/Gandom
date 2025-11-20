@@ -26,7 +26,7 @@ const SoupsCard = ({ title, price, description, image, nutrition }) => {
         </div>
 
         <p className="text-[#426B1F] font-semibold text-lg ">{price}</p>
-        <p className="text-gray-500 font-normal text-sm mt-2">{description}</p>
+        <p className="text-gray-500 font-normal text-sm mt-4">{description}</p>
       </div>
       <div className="flex-1 min-w-[250px]">
         <NutritionTable nutrition={nutrition} />

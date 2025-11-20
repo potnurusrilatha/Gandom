@@ -1,28 +1,31 @@
 import CoverDishes from "../../../assets/Images/2.Dishes/_Cover Side Dishes.png";
+import { sidedishesData } from "../../../data/sidedishesdata";
+import SideDishCard from "../../../components/SideDishCard";
 
 const SidedishesPage = () => {
   return (
-     <>
-      <section
-        className="relative w-full min-h-[calc(100vh-90px)] flex flex-col md:flex-row items-center justify-center overflow-hidden -mt-[112px] pb-16 sm:pb-20 md:pb-24" 
-      >
-       
-        <div className="relative flex flex-col justify-center items-center w-full md:w-1/2 px-4 sm:px-8 md:px-16 lg:px-24 h-full text-center">
-       
+    <>
+      {/* Hero Section */}
+      <section className="relative w-full min-h-[500px] md:min-h-[calc(100vh-90px)] flex items-center overflow-hidden">
+        <img
+          src={CoverDishes}
+          alt="Side Dishes Cover"
+          className="absolute inset-0 w-full h-full object-cover"
+        />
+
+        <div className="relative z-10 flex flex-col justify-center items-center md:items-start w-full md:w-1/2 px-4 sm:px-8 md:px-16 lg:px-24 text-center md:text-left">
           <h1
-            className="text-primaryHover font-lexend font-bold leading-tight tracking-tight"
+            className="text-primaryHover font-lexend text-center font-bold leading-tight tracking-tight"
             style={{
-              fontSize: "clamp(36px, 5vw, 80px)", 
+              fontSize: "clamp(36px, 5vw, 94px)",
               lineHeight: "132%",
               letterSpacing: "-0.02em",
-              whiteSpace: "nowrap",
-              marginBottom: "clamp(20px, 4vh, 40px)", 
+              marginBottom: "clamp(20px, 3vh, 80px)",
             }}
           >
             Side Dishes,
           </h1>
 
-          
           <h2
             className="font-santa"
             style={{
@@ -32,7 +35,7 @@ const SidedishesPage = () => {
               fontSize: "clamp(36px, 5vw, 94.25px)",
               lineHeight: "132%",
               letterSpacing: "-0.02em",
-              transform: "rotate(-3.62deg)", 
+              transform: "rotate(-3.62deg)",
               whiteSpace: "nowrap",
               textAlign: "center",
             }}
@@ -40,18 +43,25 @@ const SidedishesPage = () => {
             Pickles and snacks
           </h2>
         </div>
-     
-        <div className="relative flex items-center justify-center w-full md:w-1/2 h-auto">
-          <img
-            src={CoverDishes}
-            alt="Side Dishes Cover"
-            className="object-contain w-[80%] sm:w-[70%] md:w-[90%] lg:w-[1003px] h-auto max-h-[473px]"
-          />
-        </div>
       </section>
 
-      <div className="w-full h-[80px] sm:h-[100px] md:h-[140px]"></div>
+      {/* Side Dish Cards */}
+      <section className="bg-grayLight flex flex-col items-center px-4 sm:px-8 md:px-16 py-12 gap-6">
+        <div className="w-full max-w-5xl flex flex-col md:flex-row flex-wrap gap-6">
+          {sidedishesData.map((dish, idx) => (
+            <SideDishCard
+              key={idx}
+              title={dish.title}
+              price={dish.price}
+              description={dish.description}
+              image={dish.image}
+              nutrition={dish.nutrition}
+            />
+          ))}
+        </div>
+      </section>
     </>
   );
 };
-export default SidedishesPage
+
+export default SidedishesPage;

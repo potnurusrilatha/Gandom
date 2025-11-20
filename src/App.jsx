@@ -2,6 +2,11 @@
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import HealthySection from "./components/HealthyDishes";
+import AboutUsSection from "./components/AboutUs/AboutUs";
+import EventsSpecialpromotions from "./components/EventsSpecialpromotions";
+import GymPage from "./pages/Dishes/GymPage/page.jsx";
+import GymHealthy from "./components/Gym/GymHealthy.jsx";
+import Hero from "./components/Hero/Hero";
 import SoupsPage from "./pages/Dishes/SoupsPage/page.jsx";
 import DessertsPage from "./pages/Dishes/DessertsPage/page.jsx"
 import WafflesPage from "./pages/Dishes/WafflesPage/page.jsx";
@@ -10,19 +15,19 @@ import Delivery from "./components/Delivery";
 import DeliveryOrderPage from "./pages/Delivery/DeliveryOrderPage/page.jsx";
 import CreateBoxMenuPage from "./pages/Delivery/CreateBoxMenu/page.jsx";
 import AboutUsPage from "./pages/AboutUs/about-us.jsx";
+import PayPage from "./pages/Pay/PayPage";
 import YourCart from "./pages/YourCart/YourCart";
 import HomeEvents from "./components/HomeEvents";
 import EventsPage from "./pages/EventsPage/page.jsx";
 import { Routes, Route } from "react-router-dom";
-import GymHealthy from "./components/Gym/GymHealthy";
-
+import Pay from "./pages/Pay/PayPage";
 
 function App() {
   return (
     <div className="flex flex-col min-h-screen w-full bg-beigebg">
       <Header />
 
-      <main className="flex-grow w-full max-w-[1440px] mx-auto">
+      <main className="bg-beigebg flex-grow w-full max-w-[1440px] mx-auto">
         <Routes>
 
           {/* Home page */}
@@ -31,10 +36,12 @@ function App() {
             path="/"
             element={
               <>
+                <Hero />
                 <HealthySection />
                 <HomeEvents />
                 <GymHealthy />
                 <Delivery />
+                <AboutUsSection />
               </>
             }
           />
@@ -52,13 +59,18 @@ function App() {
 
           {/* Other pages */}
           <Route path="/about-us" element={<AboutUsPage />} />
+          <Route path="/pay" element={<PayPage />} />
           <Route path="/your-cart" element={<YourCart />} />
           <Route path="/events" element={<EventsPage />} />
+          <Route path="/gym" element={<GymPage />} />
+          
+
         </Routes>
       </main>
 
       <Footer />
     </div>
+
   );
 }
 
