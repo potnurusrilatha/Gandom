@@ -1,6 +1,8 @@
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import HealthySection from "./components/HealthyDishes";
+import EventsSpecialpromotions from "./components/EventsSpecialpromotions";
+import GymHealthy from "./components/Gym/GymHealthy";
 import Hero from "./components/Hero/Hero";
 import SoupsPage from "./pages/Dishes/SoupsPage/page.jsx";
 import DessertsPage from "./pages/Dishes/DessertsPage/page.jsx"
@@ -11,14 +13,11 @@ import DeliveryOrderPage from "./pages/Delivery/DeliveryOrderPage/page.jsx";
 import CreateBoxMenuPage from "./pages/Delivery/CreateBoxMenu/page.jsx";
 import AboutUsPage from "./pages/AboutUs/about-us.jsx";
 import PayPage from "./pages/Pay/PayPage";
-
 import YourCart from "./pages/YourCart/YourCart";
 import HomeEvents from "./components/HomeEvents";
 import EventsPage from "./pages/EventsPage/page.jsx";
 import { Routes, Route } from "react-router-dom";
-import GymHealthy from "./components/Gym/GymHealthy";
 import Pay from "./pages/Pay/PayPage";
-
 
 function App() {
   return (
@@ -59,6 +58,7 @@ function App() {
           <Route path="/pay" element={<PayPage />} />
           <Route path="/your-cart" element={<YourCart />} />
           <Route path="/events" element={<EventsPage />} />
+          <Route path="/gym" element={<GymHealthy />} />
 
         </Routes>
       </main>
