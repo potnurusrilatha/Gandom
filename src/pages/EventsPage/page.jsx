@@ -7,27 +7,34 @@ const EventsPage = () => {
     <section className="w-full min-h-[calc(100vh-90px)] pb-16 sm:pb-20 md:pb-24">
 
       {/* Hero Section */}
-      <div className="relative w-full md:h-[calc(100vh-90px)] flex flex-col md:flex-row items-center justify-center overflow-hidden px-4 sm:px-6">
+      <div className="relative w-full min-h-[500px] md:min-h-[calc(100vh-90px)] flex items-center overflow-hidden">
         
-        {/* Text Section */}
-        <div className="relative w-full md:w-1/2 flex flex-col justify-center items-center text-center h-full">
+        {/* Background Image */}
+        <img
+          src={CoverEvents}
+          alt="Events Cover"
+          className="absolute inset-0 w-full h-full object-cover"
+        />
+
+        {/* Text Overlay */}
+        <div className="relative z-10 flex flex-col justify-center items-start w-full md:w-1/2 px-4 sm:px-8 md:px-16 lg:px-24 text-left">
           <h1
+            className="text-primaryHover font-lexend font-bold leading-tight tracking-tight"
             style={{
-              fontFamily: "Inter, sans-serif",
-              fontWeight: 700,
-              fontSize: "clamp(36px, 6vw, 88.36px)",
-              lineHeight: "120%",
-              letterSpacing: "-2.2%",
-              color: "#DEA401",
-              textAlign: "center",
+              fontSize: "clamp(36px, 6vw, 88px)",
+              lineHeight: "132%",
+              letterSpacing: "-0.02em",
+              marginBottom: "clamp(0px, 4vh, 40px)",
+               left: "calc(20% + 0.5rem)",
+               position: "relative",
+
             }}
-            className="mb-3 sm:mb-4"
           >
             Events and
           </h1>
 
           <h2
-            className="font-santa whitespace-normal md:whitespace-nowrap"
+            className="font-santa"
             style={{
               color: "#E9610C",
               fontWeight: 400,
@@ -35,21 +42,11 @@ const EventsPage = () => {
               lineHeight: "132%",
               letterSpacing: "-0.02em",
               transform: "rotate(-3.62deg)",
-              marginTop: "0.5rem",
-              marginLeft: "clamp(0px, 5vw, 80px)",
+              whiteSpace: "nowrap",
             }}
           >
             Special Promotions
           </h2>
-        </div>
-
-        {/* Image Section */}
-        <div className="relative w-full md:w-1/2 flex items-center justify-center mt-6 md:mt-0">
-          <img
-            src={CoverEvents}
-            alt="Events Cover"
-            className="w-full max-w-[700px] object-contain"
-          />
         </div>
       </div>
 
