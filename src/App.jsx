@@ -1,6 +1,7 @@
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import HealthySection from "./components/HealthyDishes";
+import AboutUsSection from "./components/AboutUs/AboutUs";
 import EventsSpecialpromotions from "./components/EventsSpecialpromotions";
 import GymHealthy from "./components/Gym/GymHealthy";
 import Hero from "./components/Hero/Hero";
@@ -38,6 +39,7 @@ function App() {
                 <HomeEvents />
                 <GymHealthy />
                 <Delivery />
+                <AboutUsSection />
               </>
             }
           />
