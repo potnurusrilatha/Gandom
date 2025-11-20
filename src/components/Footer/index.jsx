@@ -1,4 +1,4 @@
-import logogandom from "../../assets/Images/6.Footer/LogoWhite.png";
+import logowhitegandom from "../../assets/Images/6.Footer/Logowhite.png";
 import background from "../../assets/Images/6.Footer/Slide9.png";
 import Instagram1 from "../../assets/Images/6.Footer/ShareAshe.png";
 import Instagram2 from "../../assets/Images/6.Footer/Waffles.png";
@@ -25,7 +25,7 @@ const Footer = () => {
           {/* Logo */}
           <div className="flex-shrink-0">
             <img
-              src={logogandom}
+              src={logowhitegandom}
               alt="Gandom Logo"
               className="w-28 md:w-36 lg:w-40 object-contain"
             />
