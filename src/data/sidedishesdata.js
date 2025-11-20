@@ -1,6 +1,7 @@
-import Sidedish1 from "../assets/Images/2.Dishes/sidedish1.png";
+import Sidedish1 from "../assets/Images/2.Dishes/Sidedish1.png";
 import Sidedish2 from "../assets/Images/2.Dishes/sidedish2.png";
-import Sidedish3 from "../assets/Images/2.Dishes/sidedish3.png";
+import Sidedish3 from "../assets/Images/2.Dishes/sidedish3.png";   
+
 
 export const sidedishesData = [
   {
