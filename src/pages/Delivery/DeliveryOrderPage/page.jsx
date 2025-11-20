@@ -32,32 +32,43 @@ const DeliveryOrderPage = () => {
 
   return (
     <>
- <div className="absolute w-full flex flex-col items-center md:items-start px-4 md:px-16 top-1/2 transform -translate-y-1/2">
-  {/* "Create your" */}
-  <h1
-    className="text-primaryHover font-lexend font-bold leading-tight text-center md:text-left"
-    style={{
-      fontSize: "clamp(32px, 6vw, 94px)"
-    }}
-  >
-    {"Create your".split("").map((letter, idx) => (
-      <span key={idx}>{letter}</span>
-    ))}
-  </h1>
+      {/* Hero Section */}
+<div className="w-full relative">
+  <section className="relative w-full min-h-[500px] md:min-h-[calc(100vh-90px)]">
+    {/* Hero Image */}
+    <img
+      src={CoverDelivery}
+      alt="Delivery hero cover"
+      className="absolute inset-0 w-full h-full object-cover"
+    />
 
-  {/* "Box Menu" */}
-  <span
-    className="font-santa text-pink-500 block mt-2 md:mt-[-20px]"
-    style={{
-      fontSize: "clamp(28px, 5vw, 94px)",
-      transform: "translateX(clamp(20px, 5vw, 70px)) rotate(-3.62deg)",
-      transformOrigin: "left center"
-    }}
-  >
-    Box Menu
-  </span>
+    {/* Left Gradient Overlay */}
+    <div className="absolute inset-y-0 left-0 w-[45%] bg-gradient-to-r from-[#F7F4EF] via-[#F7F4EF]/80 to-transparent pointer-events-none" />
+
+    {/* Text */}
+    <div className="absolute left-16 md:left-40 top-52 md:top-64">
+      <h1 className="leading-tight text-left">
+        <span
+          ref={healthyRef}
+          className="block text-primaryHover font-lexend font-bold text-4xl sm:text-5xl md:text-[94px] tracking-tight"
+        >
+          {"Delivery".split("").map((letter, idx) => (
+            <span key={idx}>{letter}</span>
+          ))}
+        </span>
+        <span
+          className="block font-santa text-pink-500 text-4xl sm:text-5xl md:text-[94px]"
+          style={{
+            transform: `translateX(${tOffset + 50}px) translateY(25px) rotate(-3.62deg)`,
+            transformOrigin: "left center",
+          }}
+        >
+          Order
+        </span>
+      </h1>
+    </div>
+  </section>
 </div>
-
 
 {/* Delivery Cards Section */}
 <section className="bg-grayLight px-4 sm:px-8 md:px-16 py-12">
