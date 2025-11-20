@@ -24,8 +24,8 @@ function App() {
   return (
     <div className="flex flex-col min-h-screen w-full bg-beigebg">
       <Header />
-      <Hero />
-      <main className="flex-grow w-full max-w-[1440px] mx-auto">
+
+      <main className="bg-beigebg flex-grow w-full max-w-[1440px] mx-auto">
         <Routes>
 
           {/* Home page */}
@@ -34,6 +34,7 @@ function App() {
             path="/"
             element={
               <>
+                <Hero />
                 <HealthySection />
                 <HomeEvents />
                 <GymHealthy />
