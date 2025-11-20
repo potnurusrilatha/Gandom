@@ -33,6 +33,7 @@ export default {
         grayDark: "#1E1E1E",
         grayBorder: "#E6E6E6",
         beigebg: "#F7F3EB", 
+        orangeHome: "#E6B220",
 
         // Button colors
         buttonBg: "#E8A302",

@@ -1,6 +1,8 @@
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import HealthySection from "./components/HealthyDishes";
+import AboutUsSection from "./components/AboutUs/AboutUs";
+import EventsSpecialpromotions from "./components/EventsSpecialpromotions";
 import GymPage from "./pages/Dishes/GymPage/page.jsx";
 import GymHealthy from "./components/Gym/GymHealthy.jsx";
 import Hero from "./components/Hero/Hero";
@@ -38,6 +40,7 @@ function App() {
                 <HomeEvents />
                 <GymHealthy />
                 <Delivery />
+                <AboutUsSection />
               </>
             }
           />
