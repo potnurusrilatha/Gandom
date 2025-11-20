@@ -1,4 +1,4 @@
-import NutritionTable from "../NutritionTable";
+import NutritionTable from "../NutrionsTable";
 
 const DessertCard = ({ title, price, description, image, nutrition }) => {
   return (
