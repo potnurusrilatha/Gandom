@@ -24,7 +24,6 @@ const DeliveryBoxMenuPage = () => {
 
   return (
     <>
-      {/* Hero Section */}
       <section className="relative w-full min-h-[500px] md:min-h-[calc(100vh-90px)]">
         <img
           src={CoverDeliveryBoxMenu}
@@ -49,8 +48,6 @@ const DeliveryBoxMenuPage = () => {
               <span key={idx}>{letter}</span>
             ))}
           </h1>
-
-          {/* "Box Menu" aligned with the E */}
           <span
             className="font-santa text-pink-500 block mt-2 md:mt-[-20px]"
             style={{

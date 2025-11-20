@@ -41,11 +41,7 @@ const DeliveryOrderPage = () => {
       alt="Delivery hero cover"
       className="absolute inset-0 w-full h-full object-cover"
     />
-
-    {/* Left Gradient Overlay */}
     <div className="absolute inset-y-0 left-0 w-[45%] bg-gradient-to-r from-[#F7F4EF] via-[#F7F4EF]/80 to-transparent pointer-events-none" />
-
-    {/* Text */}
     <div className="absolute left-16 md:left-40 top-52 md:top-64">
       <h1 className="leading-tight text-left">
         <span
