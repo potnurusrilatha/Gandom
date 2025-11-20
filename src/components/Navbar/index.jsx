@@ -20,7 +20,7 @@ const Navbar = () => {
   const mobileLinkClasses = ({ isActive }) =>
     `font-inter text-[18px] w-full text-center py-2 rounded ${
       isActive
-        ? "text-primary font-bold bg-primary"
+        ? "text-primary font-bold underline"
         : "text-black hover:text-primary "
     }`;
 

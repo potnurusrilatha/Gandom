@@ -10,21 +10,21 @@ const AboutUsSection = () => {
   };
 
   return (
-    <section className="relative w-full h-[500px] lg:h-[600px] overflow-hidden mt-16 lg:mt-24 mb-4">
+    <section className="relative w-full overflow-hidden mt-16 lg:mt-24 mb-8 lg:mb-12">
       {/* Background Image */}
       <img
         src={AboutImg}
         alt="About Us"
-        className="absolute top-0 left-0 w-full h-full object-cover"
+        className="w-full h-[400px] sm:h-[450px] md:h-[500px] lg:h-[600px] object-cover"
       />
 
       {/* Overlay */}
       <div className="absolute inset-0 bg-black/20"></div>
 
       {/* Text + Button */}
-      <div className="relative z-10 flex h-full items-center px-6 lg:px-16">
-        <div className="max-w-[650px] space-y-8 text-center">
-          <h2 className="text-[28px] sm:text-[32px] md:text-[36px] lg:text-[40px] font-inter font-bold leading-tight text-[#E6B220]">
+      <div className="absolute inset-0 flex items-center justify-center lg:justify-start px-4 sm:px-6 md:px-10 lg:px-16">
+        <div className="max-w-[650px] space-y-6 sm:space-y-8 text-center lg:text-center">
+          <h2 className="text-[24px] sm:text-[28px] md:text-[32px] lg:text-[40px] font-inter font-bold leading-tight text-[#E6B220]">
             Every dish is made with
             <br />
             love, passion, and the
@@ -32,18 +32,10 @@ const AboutUsSection = () => {
             warmth of home
           </h2>
 
-          {/* Button centered relative to text block */}
-          <div className="flex justify-center md:justify-center">
+          <div className="flex justify-center lg:justify-center">
             <button
               onClick={handleClick}
-              style={{
-                fontFamily: "Inter, sans-serif",
-                fontWeight: 600,
-                fontSize: "20px",
-                lineHeight: "130%",
-                color: "#F2EDE0",
-              }}
-              className="bg-yellow-600 px-6 py-3 rounded hover:bg-yellow-500 transition"
+              className="bg-yellow-600 text-white font-semibold px-5 sm:px-6 py-2 sm:py-3 rounded hover:bg-yellow-500 transition text-[16px] sm:text-[18px] md:text-[20px]"
             >
               Discover More
             </button>
