@@ -6,7 +6,7 @@ const HealthySection = () => {
 
 
   return (
-    <section className="text-center mt-0 md:mt-4">
+    <section className="bg-beigebg text-center mt-0 md:mt-4">
 
 
       {/* Heading */}
