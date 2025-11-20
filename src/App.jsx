@@ -10,11 +10,14 @@ import Delivery from "./components/Delivery";
 import DeliveryOrderPage from "./pages/Delivery/DeliveryOrderPage/page.jsx";
 import CreateBoxMenuPage from "./pages/Delivery/CreateBoxMenu/page.jsx";
 import AboutUsPage from "./pages/AboutUs/about-us.jsx";
+import PayPage from "./pages/Pay/PayPage";
+
 import YourCart from "./pages/YourCart/YourCart";
 import HomeEvents from "./components/HomeEvents";
 import EventsPage from "./pages/EventsPage/page.jsx";
 import { Routes, Route } from "react-router-dom";
 import GymHealthy from "./components/Gym/GymHealthy";
+import Pay from "./pages/Pay/PayPage";
 
 
 function App() {
@@ -52,8 +55,10 @@ function App() {
 
           {/* Other pages */}
           <Route path="/about-us" element={<AboutUsPage />} />
+          <Route path="/pay" element={<PayPage />} />
           <Route path="/your-cart" element={<YourCart />} />
           <Route path="/events" element={<EventsPage />} />
+
         </Routes>
       </main>
 

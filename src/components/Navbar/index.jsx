@@ -8,7 +8,7 @@ const Navbar = () => {
 
   const links = [
     { label: "Home", href: "/" },
-    { label: "Dishes", href: "/dishes" },
+    { label: "Dishes", href: "/dishes/soups" },
     { label: "About Us", href: "/about-us" },
     { label: "Events", href: "/events" },
     { label: "Delivery", href: "/delivery/order" },
@@ -22,7 +22,7 @@ const Navbar = () => {
           <a
             key={link.href}
             href={link.href}
-            className={`font-inter text-[16px] transition-all ${
+            className={`font-inter text-[16px] ${
               activeLink === link.label
                 ? "text-primary font-bold"
                 : "text-black hover:text-primary hover:font-bold"
@@ -32,7 +32,7 @@ const Navbar = () => {
             {link.label}
           </a>
         ))}
-        <button className="p-2 rounded hover:text-primary transition-all">
+        <button className="p-2 rounded hover:text-primary">
           <TiShoppingCart className="w-[27px] h-[24px]" />
         </button>
       </div>
@@ -53,7 +53,7 @@ const Navbar = () => {
 
       {/* Mobile & Tablet Menu */}
       {isMobileMenuOpen && (
-        <div className="absolute top-full right-0 w-56 bg-white shadow-md flex flex-col items-center py-4 gap-4 lg:hidden z-50">
+        <div className="absolute top-full right-0 w-56 bg-grayLight shadow-md flex flex-col items-center py-4 gap-4 lg:hidden z-50">
           {links.map((link) => (
             <a
               key={link.href}
