@@ -1,6 +1,9 @@
+import { useNavigate } from "react-router-dom";
 import coverGymHealthy from "../../assets/Images/7.Gym/coverhealthygymhome.png";
 
 const GymHealthy = () => {
+    const navigate = useNavigate();
+
     return (
         <section className="w-full flex justify-center px-4 py-10">
             <div
@@ -31,7 +34,10 @@ const GymHealthy = () => {
                             after your workout.
                         </h2>
 
-                        <button className="px-8 py-3 bg-[#F5C242] text-white font-semibold rounded-[10px] hover:opacity-90 transition">
+                        <button
+                            onClick={() => navigate("/gym")} 
+                            className="px-8 py-3 bg-[#F5C242] text-white font-semibold rounded-[10px] hover:opacity-90 transition"
+                        >
                             Discover More
                         </button>
                     </div>

@@ -58,6 +58,7 @@ function App() {
           <Route path="/pay" element={<PayPage />} />
           <Route path="/your-cart" element={<YourCart />} />
           <Route path="/events" element={<EventsPage />} />
+          
 
         </Routes>
       </main>
