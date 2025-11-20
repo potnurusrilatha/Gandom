@@ -21,6 +21,7 @@ import HomeEvents from "./components/HomeEvents";
 import EventsPage from "./pages/EventsPage/page.jsx";
 import { Routes, Route } from "react-router-dom";
 import Pay from "./pages/Pay/PayPage";
+import HomeCard from "./components/HomeCard/Card.jsx";
 
 function App() {
   return (
@@ -42,6 +43,7 @@ function App() {
                 <GymHealthy />
                 <Delivery />
                 <AboutUsSection />
+                <HomeCard />
               </>
             }
           />
